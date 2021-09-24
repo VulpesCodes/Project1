@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/AddAutomaton.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/AddAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/Automaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
@@ -117,6 +123,12 @@
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/Lexer.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/MultiplyAutomaton.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/MultiplyAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/PeriodAutomaton.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
@@ -127,6 +139,12 @@
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/QMarkAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/RightParenAutomaton.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/RightParenAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/Token.cpp">

@@ -10,27 +10,19 @@
 Token.h
 /users/animation/bjt73/Desktop/Project1/Token.h
 
-/users/animation/bjt73/Desktop/Project1/ColonAutomaton.cpp
-ColonAutomaton.h
-/users/animation/bjt73/Desktop/Project1/ColonAutomaton.h
-
 /users/animation/bjt73/Desktop/Project1/ColonAutomaton.h
 Automaton.h
 /users/animation/bjt73/Desktop/Project1/Automaton.h
-
-/users/animation/bjt73/Desktop/Project1/ColonDashAutomaton.cpp
-ColonDashAutomaton.h
-/users/animation/bjt73/Desktop/Project1/ColonDashAutomaton.h
 
 /users/animation/bjt73/Desktop/Project1/ColonDashAutomaton.h
 Automaton.h
 /users/animation/bjt73/Desktop/Project1/Automaton.h
 
-/users/animation/bjt73/Desktop/Project1/CommaAutomaton.cpp
-CommaAutomaton.h
 /users/animation/bjt73/Desktop/Project1/CommaAutomaton.h
+Automaton.h
+/users/animation/bjt73/Desktop/Project1/Automaton.h
 
-/users/animation/bjt73/Desktop/Project1/CommaAutomaton.h
+/users/animation/bjt73/Desktop/Project1/LeftParenAutomaton.h
 Automaton.h
 /users/animation/bjt73/Desktop/Project1/Automaton.h
 
@@ -45,6 +37,14 @@ CommaAutomaton.h
 /users/animation/bjt73/Desktop/Project1/CommaAutomaton.h
 PeriodAutomaton.h
 /users/animation/bjt73/Desktop/Project1/PeriodAutomaton.h
+QMarkAutomaton.h
+/users/animation/bjt73/Desktop/Project1/QMarkAutomaton.h
+LeftParenAutomaton.h
+/users/animation/bjt73/Desktop/Project1/LeftParenAutomaton.h
+RightParenAutomaton.h
+/users/animation/bjt73/Desktop/Project1/RightParenAutomaton.h
+MultiplyAutomaton.h
+/users/animation/bjt73/Desktop/Project1/MultiplyAutomaton.h
 iostream
 -
 fstream
@@ -58,27 +58,25 @@ Automaton.h
 Token.h
 /users/animation/bjt73/Desktop/Project1/Token.h
 
-/users/animation/bjt73/Desktop/Project1/PeriodAutomaton.cpp
-PeriodAutomaton.h
-/users/animation/bjt73/Desktop/Project1/PeriodAutomaton.h
+/users/animation/bjt73/Desktop/Project1/MultiplyAutomaton.cpp
+MultiplyAutomaton.h
+/users/animation/bjt73/Desktop/Project1/MultiplyAutomaton.h
+
+/users/animation/bjt73/Desktop/Project1/MultiplyAutomaton.h
+Automaton.h
+/users/animation/bjt73/Desktop/Project1/Automaton.h
 
 /users/animation/bjt73/Desktop/Project1/PeriodAutomaton.h
 Automaton.h
 /users/animation/bjt73/Desktop/Project1/Automaton.h
 
-/users/animation/bjt73/Desktop/Project1/Token.cpp
-Token.h
-/users/animation/bjt73/Desktop/Project1/Token.h
+/users/animation/bjt73/Desktop/Project1/QMarkAutomaton.h
+Automaton.h
+/users/animation/bjt73/Desktop/Project1/Automaton.h
+
+/users/animation/bjt73/Desktop/Project1/RightParenAutomaton.h
 
 /users/animation/bjt73/Desktop/Project1/Token.h
 string
--
-
-/users/animation/bjt73/Desktop/Project1/main.cpp
-Lexer.h
-/users/animation/bjt73/Desktop/Project1/Lexer.h
-iostream
--
-fstream
 -
 

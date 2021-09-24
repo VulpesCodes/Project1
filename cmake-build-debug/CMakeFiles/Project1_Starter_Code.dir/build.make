@@ -174,6 +174,45 @@ CMakeFiles/Project1_Starter_Code.dir/LeftParenAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project1_Starter_Code.dir/LeftParenAutomaton.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/animation/bjt73/Desktop/Project1/LeftParenAutomaton.cpp -o CMakeFiles/Project1_Starter_Code.dir/LeftParenAutomaton.cpp.s
 
+CMakeFiles/Project1_Starter_Code.dir/RightParenAutomaton.cpp.o: CMakeFiles/Project1_Starter_Code.dir/flags.make
+CMakeFiles/Project1_Starter_Code.dir/RightParenAutomaton.cpp.o: ../RightParenAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Project1_Starter_Code.dir/RightParenAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project1_Starter_Code.dir/RightParenAutomaton.cpp.o -c /users/animation/bjt73/Desktop/Project1/RightParenAutomaton.cpp
+
+CMakeFiles/Project1_Starter_Code.dir/RightParenAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project1_Starter_Code.dir/RightParenAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/animation/bjt73/Desktop/Project1/RightParenAutomaton.cpp > CMakeFiles/Project1_Starter_Code.dir/RightParenAutomaton.cpp.i
+
+CMakeFiles/Project1_Starter_Code.dir/RightParenAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project1_Starter_Code.dir/RightParenAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/animation/bjt73/Desktop/Project1/RightParenAutomaton.cpp -o CMakeFiles/Project1_Starter_Code.dir/RightParenAutomaton.cpp.s
+
+CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.o: CMakeFiles/Project1_Starter_Code.dir/flags.make
+CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.o: ../MultiplyAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.o -c /users/animation/bjt73/Desktop/Project1/MultiplyAutomaton.cpp
+
+CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/animation/bjt73/Desktop/Project1/MultiplyAutomaton.cpp > CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.i
+
+CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/animation/bjt73/Desktop/Project1/MultiplyAutomaton.cpp -o CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.s
+
+CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.o: CMakeFiles/Project1_Starter_Code.dir/flags.make
+CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.o: ../AddAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.o -c /users/animation/bjt73/Desktop/Project1/AddAutomaton.cpp
+
+CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/animation/bjt73/Desktop/Project1/AddAutomaton.cpp > CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.i
+
+CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/animation/bjt73/Desktop/Project1/AddAutomaton.cpp -o CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.s
+
 # Object files for target Project1_Starter_Code
 Project1_Starter_Code_OBJECTS = \
 "CMakeFiles/Project1_Starter_Code.dir/ColonAutomaton.cpp.o" \
@@ -184,7 +223,10 @@ Project1_Starter_Code_OBJECTS = \
 "CMakeFiles/Project1_Starter_Code.dir/Token.cpp.o" \
 "CMakeFiles/Project1_Starter_Code.dir/PeriodAutomaton.cpp.o" \
 "CMakeFiles/Project1_Starter_Code.dir/QMarkAutomaton.cpp.o" \
-"CMakeFiles/Project1_Starter_Code.dir/LeftParenAutomaton.cpp.o"
+"CMakeFiles/Project1_Starter_Code.dir/LeftParenAutomaton.cpp.o" \
+"CMakeFiles/Project1_Starter_Code.dir/RightParenAutomaton.cpp.o" \
+"CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.o" \
+"CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.o"
 
 # External object files for target Project1_Starter_Code
 Project1_Starter_Code_EXTERNAL_OBJECTS =
@@ -198,9 +240,12 @@ Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/Token.cpp.o
 Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/PeriodAutomaton.cpp.o
 Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/QMarkAutomaton.cpp.o
 Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/LeftParenAutomaton.cpp.o
+Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/RightParenAutomaton.cpp.o
+Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.o
+Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.o
 Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/build.make
 Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Project1_Starter_Code"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Project1_Starter_Code"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Project1_Starter_Code.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

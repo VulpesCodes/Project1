@@ -123,6 +123,33 @@ Project1_Starter_Code/fast:
 	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/build
 .PHONY : Project1_Starter_Code/fast
 
+AddAutomaton.o: AddAutomaton.cpp.o
+
+.PHONY : AddAutomaton.o
+
+# target to build an object file
+AddAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.o
+.PHONY : AddAutomaton.cpp.o
+
+AddAutomaton.i: AddAutomaton.cpp.i
+
+.PHONY : AddAutomaton.i
+
+# target to preprocess a source file
+AddAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.i
+.PHONY : AddAutomaton.cpp.i
+
+AddAutomaton.s: AddAutomaton.cpp.s
+
+.PHONY : AddAutomaton.s
+
+# target to generate assembly for a file
+AddAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.s
+.PHONY : AddAutomaton.cpp.s
+
 ColonAutomaton.o: ColonAutomaton.cpp.o
 
 .PHONY : ColonAutomaton.o
@@ -258,6 +285,33 @@ Lexer.cpp.s:
 	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.s
 .PHONY : Lexer.cpp.s
 
+MultiplyAutomaton.o: MultiplyAutomaton.cpp.o
+
+.PHONY : MultiplyAutomaton.o
+
+# target to build an object file
+MultiplyAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.o
+.PHONY : MultiplyAutomaton.cpp.o
+
+MultiplyAutomaton.i: MultiplyAutomaton.cpp.i
+
+.PHONY : MultiplyAutomaton.i
+
+# target to preprocess a source file
+MultiplyAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.i
+.PHONY : MultiplyAutomaton.cpp.i
+
+MultiplyAutomaton.s: MultiplyAutomaton.cpp.s
+
+.PHONY : MultiplyAutomaton.s
+
+# target to generate assembly for a file
+MultiplyAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.s
+.PHONY : MultiplyAutomaton.cpp.s
+
 PeriodAutomaton.o: PeriodAutomaton.cpp.o
 
 .PHONY : PeriodAutomaton.o
@@ -311,6 +365,33 @@ QMarkAutomaton.s: QMarkAutomaton.cpp.s
 QMarkAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/QMarkAutomaton.cpp.s
 .PHONY : QMarkAutomaton.cpp.s
+
+RightParenAutomaton.o: RightParenAutomaton.cpp.o
+
+.PHONY : RightParenAutomaton.o
+
+# target to build an object file
+RightParenAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/RightParenAutomaton.cpp.o
+.PHONY : RightParenAutomaton.cpp.o
+
+RightParenAutomaton.i: RightParenAutomaton.cpp.i
+
+.PHONY : RightParenAutomaton.i
+
+# target to preprocess a source file
+RightParenAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/RightParenAutomaton.cpp.i
+.PHONY : RightParenAutomaton.cpp.i
+
+RightParenAutomaton.s: RightParenAutomaton.cpp.s
+
+.PHONY : RightParenAutomaton.s
+
+# target to generate assembly for a file
+RightParenAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/RightParenAutomaton.cpp.s
+.PHONY : RightParenAutomaton.cpp.s
 
 Token.o: Token.cpp.o
 
@@ -375,6 +456,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Project1_Starter_Code"
+	@echo "... AddAutomaton.o"
+	@echo "... AddAutomaton.i"
+	@echo "... AddAutomaton.s"
 	@echo "... ColonAutomaton.o"
 	@echo "... ColonAutomaton.i"
 	@echo "... ColonAutomaton.s"
@@ -390,12 +474,18 @@ help:
 	@echo "... Lexer.o"
 	@echo "... Lexer.i"
 	@echo "... Lexer.s"
+	@echo "... MultiplyAutomaton.o"
+	@echo "... MultiplyAutomaton.i"
+	@echo "... MultiplyAutomaton.s"
 	@echo "... PeriodAutomaton.o"
 	@echo "... PeriodAutomaton.i"
 	@echo "... PeriodAutomaton.s"
 	@echo "... QMarkAutomaton.o"
 	@echo "... QMarkAutomaton.i"
 	@echo "... QMarkAutomaton.s"
+	@echo "... RightParenAutomaton.o"
+	@echo "... RightParenAutomaton.i"
+	@echo "... RightParenAutomaton.s"
 	@echo "... Token.o"
 	@echo "... Token.i"
 	@echo "... Token.s"
