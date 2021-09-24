@@ -18,6 +18,21 @@ void Lexer::CreateAutomata() {
     // TODO: Add the other needed automata here
 }
 
+std::string Lexer::TokenstoString() {
+    for (int i = 0; i < tokens.size(); i++) {
+        std::cout << tokens[i]->toString()<< std::endl;
+    }
+}
+
+std::string Lexer::descCreate(int value, std::string input) {
+    std::string desc = "";
+    for (int i = 0; i < value; i++) {
+        desc += input[0];
+        input.erase(0,1);
+    }
+    return desc;
+}
+
 void Lexer::Run(std::string& input) {
     // TODO: convert this pseudo-code with the algorithm into actual C++ code
     /*
@@ -70,15 +85,16 @@ void Lexer::Run(std::string& input) {
             }
         }
         if (maxRead > 0) {
-            Token *newtoken = maxAutomaton->CreateToken("ddd",lineNumber);
+            Token *newtoken = maxAutomaton->CreateToken(descCreate(maxRead,input),lineNumber);
             lineNumber += maxAutomaton->NewLinesRead();
             tokens.push_back(newtoken);
         }
         else {
             maxRead = 1;
-            Token *newtoken = new Token(TokenType::UNDEFINED,"ooo",lineNumber);
+            Token *newtoken = new Token(TokenType::UNDEFINED,"d",lineNumber);
             tokens.push_back(newtoken);
         }
         input.erase(0,maxRead);
     }
+    TokenstoString();
 }

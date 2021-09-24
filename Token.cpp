@@ -1,7 +1,9 @@
 #include "Token.h"
 
 Token::Token() {
-    // TODO: initialize all member variables
+    tokenName = TokenType::UNDEFINED;
+    description = "";
+    lineNumber = 0;
 }
 std::string Token::TokenTypeToString(TokenType type){
     switch (type) {
@@ -10,10 +12,17 @@ std::string Token::TokenTypeToString(TokenType type){
         case TokenType::UNDEFINED: return "UNDEFINED"; break;
     }
 }
-std::string Token::toString() {
-    std::string newtype = TokenTypeToString(type)
-    return "(" +
+
+Token::Token(TokenType type,std::string input, int i) {
+    tokenName = type;
+    description = input;
+    lineNumber = i;
 }
+
+std::string Token::toString() {
+    return "(" + TokenTypeToString(tokenName) + ",\"" + description + "\"," + std::to_string(lineNumber) + ")";
+}
+
 
 
 

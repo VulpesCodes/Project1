@@ -12,6 +12,10 @@ private:
 
     void CreateAutomata();
 
+    std::string TokenstoString();
+
+    std::string descCreate(int value,std::string input);
+
     // TODO: add any other private methods here (if needed)
 
 public:
@@ -19,6 +23,8 @@ public:
     ~Lexer();
 
     void Run(std::string& input);
+
+
     
     // TODO: add other public methods here
 
