@@ -1,6 +1,10 @@
 #include "Lexer.h"
 #include "ColonAutomaton.h"
 #include "ColonDashAutomaton.h"
+#include "CommaAutomaton.h"
+#include "PeriodAutomaton.h"
+#include "QMarkAutomaton.h"
+#include "LeftParenAutomaton.h"
 #include <iostream>
 #include <fstream>
 
@@ -15,13 +19,19 @@ Lexer::~Lexer() {
 void Lexer::CreateAutomata() {
     automata.push_back(new ColonAutomaton());
     automata.push_back(new ColonDashAutomaton());
+    automata.push_back(new CommaAutomaton());
+    automata.push_back(new PeriodAutomaton());
+    automata.push_back(new QMarkAutomaton());
+    automata.push_back(new LeftParenAutomaton());
     // TODO: Add the other needed automata here
 }
 
-std::string Lexer::TokenstoString() {
+std::string Lexer::tokenstoString() {
     for (int i = 0; i < tokens.size(); i++) {
         std::cout << tokens[i]->toString()<< std::endl;
     }
+    std::cout << "Total Tokens = " << tokens.size();
+    return "";
 }
 
 std::string Lexer::descCreate(int value, std::string input) {
@@ -77,24 +87,41 @@ void Lexer::Run(std::string& input) {
     while (input.size() > 0) {
         int maxRead = 0;
         Automaton *maxAutomaton = automata[0];
-        for (int i=0; i < automata.size(); i++){
-            int inputRead = automata[i]->Start(input);
-            if (inputRead > maxRead) {
-                maxRead = inputRead;
-                maxAutomaton = automata[i];
-            }
+
+        if (input[0] == ' ') {
+            input.erase(0,1);
         }
-        if (maxRead > 0) {
-            Token *newtoken = maxAutomaton->CreateToken(descCreate(maxRead,input),lineNumber);
-            lineNumber += maxAutomaton->NewLinesRead();
-            tokens.push_back(newtoken);
+        else if (input[0] == '\n')
+        {
+            lineNumber++;
+            input.erase(0,1);
+        }
+        else if (input[0] == '\r')
+        {
+            input.erase(0,1);
         }
         else {
-            maxRead = 1;
-            Token *newtoken = new Token(TokenType::UNDEFINED,"d",lineNumber);
-            tokens.push_back(newtoken);
+            for (int i = 0; i < automata.size(); i++) {
+                int inputRead = automata[i]->Start(input);
+                if (inputRead > maxRead) {
+                    maxRead = inputRead;
+                    maxAutomaton = automata[i];
+                }
+            }
+            if (maxRead > 0) {
+                Token *newToken = maxAutomaton->CreateToken(descCreate(maxRead, input), lineNumber);
+                lineNumber += maxAutomaton->NewLinesRead();
+                tokens.push_back(newToken);
+            } else {
+                maxRead = 1;
+                Token *newToken = new Token(TokenType::UNDEFINED,descCreate(maxRead, input), lineNumber);
+                tokens.push_back(newToken);
+            }
+            input.erase(0, maxRead);
         }
-        input.erase(0,maxRead);
+
     }
-    TokenstoString();
+    Token *newToken = new Token(TokenType::EOFILE,"", lineNumber);
+    tokens.push_back(newToken);
+    tokenstoString();
 }

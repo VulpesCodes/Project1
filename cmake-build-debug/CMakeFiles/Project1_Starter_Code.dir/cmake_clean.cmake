@@ -1,7 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Project1_Starter_Code.dir/ColonAutomaton.cpp.o"
   "CMakeFiles/Project1_Starter_Code.dir/ColonDashAutomaton.cpp.o"
+  "CMakeFiles/Project1_Starter_Code.dir/CommaAutomaton.cpp.o"
+  "CMakeFiles/Project1_Starter_Code.dir/LeftParenAutomaton.cpp.o"
   "CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o"
+  "CMakeFiles/Project1_Starter_Code.dir/PeriodAutomaton.cpp.o"
+  "CMakeFiles/Project1_Starter_Code.dir/QMarkAutomaton.cpp.o"
   "CMakeFiles/Project1_Starter_Code.dir/Token.cpp.o"
   "CMakeFiles/Project1_Starter_Code.dir/main.cpp.o"
   "Project1_Starter_Code"

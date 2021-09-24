@@ -11,8 +11,10 @@ add_executable(Project1_Starter_Code
         ColonAutomaton.h
         ColonDashAutomaton.cpp
         ColonDashAutomaton.h
+        CommaAutomaton.cpp
+        CommaAutomaton.h
         Lexer.cpp
         Lexer.h
         main.cpp
         Token.cpp
-        Token.h)
+        Token.h PeriodAutomaton.cpp PeriodAutomaton.h QMarkAutomaton.cpp QMarkAutomaton.h LeftParenAutomaton.cpp LeftParenAutomaton.h)

@@ -99,10 +99,34 @@
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/ColonDashAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/CommaAutomaton.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/CommaAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/LeftParenAutomaton.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/LeftParenAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/Lexer.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/Lexer.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/PeriodAutomaton.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/PeriodAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/QMarkAutomaton.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/QMarkAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/Token.cpp">

@@ -177,6 +177,60 @@ ColonDashAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/ColonDashAutomaton.cpp.s
 .PHONY : ColonDashAutomaton.cpp.s
 
+CommaAutomaton.o: CommaAutomaton.cpp.o
+
+.PHONY : CommaAutomaton.o
+
+# target to build an object file
+CommaAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/CommaAutomaton.cpp.o
+.PHONY : CommaAutomaton.cpp.o
+
+CommaAutomaton.i: CommaAutomaton.cpp.i
+
+.PHONY : CommaAutomaton.i
+
+# target to preprocess a source file
+CommaAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/CommaAutomaton.cpp.i
+.PHONY : CommaAutomaton.cpp.i
+
+CommaAutomaton.s: CommaAutomaton.cpp.s
+
+.PHONY : CommaAutomaton.s
+
+# target to generate assembly for a file
+CommaAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/CommaAutomaton.cpp.s
+.PHONY : CommaAutomaton.cpp.s
+
+LeftParenAutomaton.o: LeftParenAutomaton.cpp.o
+
+.PHONY : LeftParenAutomaton.o
+
+# target to build an object file
+LeftParenAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/LeftParenAutomaton.cpp.o
+.PHONY : LeftParenAutomaton.cpp.o
+
+LeftParenAutomaton.i: LeftParenAutomaton.cpp.i
+
+.PHONY : LeftParenAutomaton.i
+
+# target to preprocess a source file
+LeftParenAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/LeftParenAutomaton.cpp.i
+.PHONY : LeftParenAutomaton.cpp.i
+
+LeftParenAutomaton.s: LeftParenAutomaton.cpp.s
+
+.PHONY : LeftParenAutomaton.s
+
+# target to generate assembly for a file
+LeftParenAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/LeftParenAutomaton.cpp.s
+.PHONY : LeftParenAutomaton.cpp.s
+
 Lexer.o: Lexer.cpp.o
 
 .PHONY : Lexer.o
@@ -203,6 +257,60 @@ Lexer.s: Lexer.cpp.s
 Lexer.cpp.s:
 	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.s
 .PHONY : Lexer.cpp.s
+
+PeriodAutomaton.o: PeriodAutomaton.cpp.o
+
+.PHONY : PeriodAutomaton.o
+
+# target to build an object file
+PeriodAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/PeriodAutomaton.cpp.o
+.PHONY : PeriodAutomaton.cpp.o
+
+PeriodAutomaton.i: PeriodAutomaton.cpp.i
+
+.PHONY : PeriodAutomaton.i
+
+# target to preprocess a source file
+PeriodAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/PeriodAutomaton.cpp.i
+.PHONY : PeriodAutomaton.cpp.i
+
+PeriodAutomaton.s: PeriodAutomaton.cpp.s
+
+.PHONY : PeriodAutomaton.s
+
+# target to generate assembly for a file
+PeriodAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/PeriodAutomaton.cpp.s
+.PHONY : PeriodAutomaton.cpp.s
+
+QMarkAutomaton.o: QMarkAutomaton.cpp.o
+
+.PHONY : QMarkAutomaton.o
+
+# target to build an object file
+QMarkAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/QMarkAutomaton.cpp.o
+.PHONY : QMarkAutomaton.cpp.o
+
+QMarkAutomaton.i: QMarkAutomaton.cpp.i
+
+.PHONY : QMarkAutomaton.i
+
+# target to preprocess a source file
+QMarkAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/QMarkAutomaton.cpp.i
+.PHONY : QMarkAutomaton.cpp.i
+
+QMarkAutomaton.s: QMarkAutomaton.cpp.s
+
+.PHONY : QMarkAutomaton.s
+
+# target to generate assembly for a file
+QMarkAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/QMarkAutomaton.cpp.s
+.PHONY : QMarkAutomaton.cpp.s
 
 Token.o: Token.cpp.o
 
@@ -273,9 +381,21 @@ help:
 	@echo "... ColonDashAutomaton.o"
 	@echo "... ColonDashAutomaton.i"
 	@echo "... ColonDashAutomaton.s"
+	@echo "... CommaAutomaton.o"
+	@echo "... CommaAutomaton.i"
+	@echo "... CommaAutomaton.s"
+	@echo "... LeftParenAutomaton.o"
+	@echo "... LeftParenAutomaton.i"
+	@echo "... LeftParenAutomaton.s"
 	@echo "... Lexer.o"
 	@echo "... Lexer.i"
 	@echo "... Lexer.s"
+	@echo "... PeriodAutomaton.o"
+	@echo "... PeriodAutomaton.i"
+	@echo "... PeriodAutomaton.s"
+	@echo "... QMarkAutomaton.o"
+	@echo "... QMarkAutomaton.i"
+	@echo "... QMarkAutomaton.s"
 	@echo "... Token.o"
 	@echo "... Token.i"
 	@echo "... Token.s"

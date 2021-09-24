@@ -12,7 +12,7 @@ private:
 
     void CreateAutomata();
 
-    std::string TokenstoString();
+    std::string tokenstoString();
 
     std::string descCreate(int value,std::string input);
 
