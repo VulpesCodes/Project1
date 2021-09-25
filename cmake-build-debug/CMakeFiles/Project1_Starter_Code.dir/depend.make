@@ -6,6 +6,11 @@ CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.o: ../AddAutomaton.h
 CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.o: ../Automaton.h
 CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.o: ../Token.h
 
+CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.o: ../Automaton.h
+CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.o: ../BadCommentAutomaton.cpp
+CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.o: ../BadCommentAutomaton.h
+CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.o: ../Token.h
+
 CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.o: ../Automaton.h
 CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.o: ../BadStringAutomaton.cpp
 CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.o: ../BadStringAutomaton.h
@@ -46,6 +51,7 @@ CMakeFiles/Project1_Starter_Code.dir/LeftParenAutomaton.cpp.o: ../Token.h
 
 CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o: ../AddAutomaton.h
 CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o: ../Automaton.h
+CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o: ../BadCommentAutomaton.h
 CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o: ../BadStringAutomaton.h
 CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o: ../BlockComment.h
 CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o: ../ColonAutomaton.h

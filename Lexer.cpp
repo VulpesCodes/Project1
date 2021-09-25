@@ -59,7 +59,7 @@ void Lexer::CreateAutomata() {
 }
 
 std::string Lexer::tokenstoString() {
-    for (int i = 0; i < tokens.size(); i++) {
+    for (unsigned int i = 0; i < tokens.size(); i++) {
         std::cout << tokens[i]->toString()<< std::endl;
     }
     std::cout << "Total Tokens = " << tokens.size();
@@ -132,8 +132,12 @@ void Lexer::Run(std::string& input) {
         {
             input.erase(0,1);
         }
+        else if (input[0] == '\t')
+        {
+            input.erase(0,1);
+        }
         else {
-            for (int i = 0; i < automata.size(); i++) {
+            for (unsigned int i = 0; i < automata.size(); i++) {
                 int inputRead = automata[i]->Start(input);
                 if (inputRead > maxRead) {
                     maxRead = inputRead;

@@ -3,6 +3,8 @@ project(Project1_Starter_Code)
 
 set(CMAKE_CXX_STANDARD 14)
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror")
+
 include_directories(.)
 
 add_executable(Project1_Starter_Code

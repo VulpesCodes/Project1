@@ -44,7 +44,7 @@ void StringAutomaton::S2(const std::string& input) {
         index++;
         S1(input);
     }
-    else if (input[index] == EOF) {
+    else if (index >= input.size()) {
         Serr();
     }
     else {

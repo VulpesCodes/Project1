@@ -6,6 +6,11 @@ CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.o
  /users/animation/bjt73/Desktop/Project1/AddAutomaton.h
  /users/animation/bjt73/Desktop/Project1/Automaton.h
  /users/animation/bjt73/Desktop/Project1/Token.h
+CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.o
+ /users/animation/bjt73/Desktop/Project1/Automaton.h
+ /users/animation/bjt73/Desktop/Project1/BadCommentAutomaton.cpp
+ /users/animation/bjt73/Desktop/Project1/BadCommentAutomaton.h
+ /users/animation/bjt73/Desktop/Project1/Token.h
 CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.o
  /users/animation/bjt73/Desktop/Project1/Automaton.h
  /users/animation/bjt73/Desktop/Project1/BadStringAutomaton.cpp
@@ -47,6 +52,7 @@ CMakeFiles/Project1_Starter_Code.dir/LeftParenAutomaton.cpp.o
 CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o
  /users/animation/bjt73/Desktop/Project1/AddAutomaton.h
  /users/animation/bjt73/Desktop/Project1/Automaton.h
+ /users/animation/bjt73/Desktop/Project1/BadCommentAutomaton.h
  /users/animation/bjt73/Desktop/Project1/BadStringAutomaton.h
  /users/animation/bjt73/Desktop/Project1/BlockComment.h
  /users/animation/bjt73/Desktop/Project1/ColonAutomaton.h
