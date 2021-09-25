@@ -14,6 +14,10 @@
 #include "RulesAutomaton.h"
 #include "QueriesAutomaton.h"
 #include "StringAutomaton.h"
+#include "LineCommentAutomaton.h"
+#include "BlockComment.h"
+#include "BadStringAutomaton.h"
+#include "BadCommentAutomaton.h"
 #include <iostream>
 #include <fstream>
 
@@ -41,7 +45,13 @@ void Lexer::CreateAutomata() {
     automata.push_back(new RulesAutomaton());
     automata.push_back(new QueriesAutomaton());
 
+    automata.push_back(new BadCommentAutomaton);
+    automata.push_back(new BadStringAutomaton());
+
     automata.push_back(new StringAutomaton());
+    automata.push_back(new LineCommentAutomaton());
+    automata.push_back(new BlockCommentAutomaton());
+
 
     automata.push_back(new IDAutomaton());
 

@@ -1,5 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.o"
+  "CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.o"
+  "CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.o"
+  "CMakeFiles/Project1_Starter_Code.dir/BlockComment.cpp.o"
   "CMakeFiles/Project1_Starter_Code.dir/ColonAutomaton.cpp.o"
   "CMakeFiles/Project1_Starter_Code.dir/ColonDashAutomaton.cpp.o"
   "CMakeFiles/Project1_Starter_Code.dir/CommaAutomaton.cpp.o"
@@ -7,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project1_Starter_Code.dir/IDAutomaton.cpp.o"
   "CMakeFiles/Project1_Starter_Code.dir/LeftParenAutomaton.cpp.o"
   "CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o"
+  "CMakeFiles/Project1_Starter_Code.dir/LineCommentAutomaton.cpp.o"
   "CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.o"
   "CMakeFiles/Project1_Starter_Code.dir/PeriodAutomaton.cpp.o"
   "CMakeFiles/Project1_Starter_Code.dir/QMarkAutomaton.cpp.o"

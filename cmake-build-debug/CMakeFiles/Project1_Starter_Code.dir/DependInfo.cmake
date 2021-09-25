@@ -5,6 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/users/animation/bjt73/Desktop/Project1/AddAutomaton.cpp" "/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.o"
+  "/users/animation/bjt73/Desktop/Project1/BadCommentAutomaton.cpp" "/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.o"
+  "/users/animation/bjt73/Desktop/Project1/BadStringAutomaton.cpp" "/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.o"
+  "/users/animation/bjt73/Desktop/Project1/BlockComment.cpp" "/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/BlockComment.cpp.o"
   "/users/animation/bjt73/Desktop/Project1/ColonAutomaton.cpp" "/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/ColonAutomaton.cpp.o"
   "/users/animation/bjt73/Desktop/Project1/ColonDashAutomaton.cpp" "/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/ColonDashAutomaton.cpp.o"
   "/users/animation/bjt73/Desktop/Project1/CommaAutomaton.cpp" "/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/CommaAutomaton.cpp.o"
@@ -12,6 +15,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/users/animation/bjt73/Desktop/Project1/IDAutomaton.cpp" "/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/IDAutomaton.cpp.o"
   "/users/animation/bjt73/Desktop/Project1/LeftParenAutomaton.cpp" "/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/LeftParenAutomaton.cpp.o"
   "/users/animation/bjt73/Desktop/Project1/Lexer.cpp" "/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o"
+  "/users/animation/bjt73/Desktop/Project1/LineCommentAutomaton.cpp" "/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/LineCommentAutomaton.cpp.o"
   "/users/animation/bjt73/Desktop/Project1/MultiplyAutomaton.cpp" "/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.o"
   "/users/animation/bjt73/Desktop/Project1/PeriodAutomaton.cpp" "/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/PeriodAutomaton.cpp.o"
   "/users/animation/bjt73/Desktop/Project1/QMarkAutomaton.cpp" "/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir/QMarkAutomaton.cpp.o"

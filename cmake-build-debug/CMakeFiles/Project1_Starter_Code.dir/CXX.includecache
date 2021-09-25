@@ -10,11 +10,11 @@
 Token.h
 /users/animation/bjt73/Desktop/Project1/Token.h
 
-/users/animation/bjt73/Desktop/Project1/QueriesAutomaton.cpp
-QueriesAutomaton.h
-/users/animation/bjt73/Desktop/Project1/QueriesAutomaton.h
+/users/animation/bjt73/Desktop/Project1/BadStringAutomaton.cpp
+BadStringAutomaton.h
+/users/animation/bjt73/Desktop/Project1/BadStringAutomaton.h
 
-/users/animation/bjt73/Desktop/Project1/QueriesAutomaton.h
+/users/animation/bjt73/Desktop/Project1/BadStringAutomaton.h
 Automaton.h
 /users/animation/bjt73/Desktop/Project1/Automaton.h
 

@@ -291,6 +291,58 @@ CMakeFiles/Project1_Starter_Code.dir/StringAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project1_Starter_Code.dir/StringAutomaton.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/animation/bjt73/Desktop/Project1/StringAutomaton.cpp -o CMakeFiles/Project1_Starter_Code.dir/StringAutomaton.cpp.s
 
+CMakeFiles/Project1_Starter_Code.dir/LineCommentAutomaton.cpp.o: CMakeFiles/Project1_Starter_Code.dir/flags.make
+CMakeFiles/Project1_Starter_Code.dir/LineCommentAutomaton.cpp.o: ../LineCommentAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Project1_Starter_Code.dir/LineCommentAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project1_Starter_Code.dir/LineCommentAutomaton.cpp.o -c /users/animation/bjt73/Desktop/Project1/LineCommentAutomaton.cpp
+
+CMakeFiles/Project1_Starter_Code.dir/LineCommentAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project1_Starter_Code.dir/LineCommentAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/animation/bjt73/Desktop/Project1/LineCommentAutomaton.cpp > CMakeFiles/Project1_Starter_Code.dir/LineCommentAutomaton.cpp.i
+
+CMakeFiles/Project1_Starter_Code.dir/LineCommentAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project1_Starter_Code.dir/LineCommentAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/animation/bjt73/Desktop/Project1/LineCommentAutomaton.cpp -o CMakeFiles/Project1_Starter_Code.dir/LineCommentAutomaton.cpp.s
+
+CMakeFiles/Project1_Starter_Code.dir/BlockComment.cpp.o: CMakeFiles/Project1_Starter_Code.dir/flags.make
+CMakeFiles/Project1_Starter_Code.dir/BlockComment.cpp.o: ../BlockComment.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Project1_Starter_Code.dir/BlockComment.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project1_Starter_Code.dir/BlockComment.cpp.o -c /users/animation/bjt73/Desktop/Project1/BlockComment.cpp
+
+CMakeFiles/Project1_Starter_Code.dir/BlockComment.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project1_Starter_Code.dir/BlockComment.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/animation/bjt73/Desktop/Project1/BlockComment.cpp > CMakeFiles/Project1_Starter_Code.dir/BlockComment.cpp.i
+
+CMakeFiles/Project1_Starter_Code.dir/BlockComment.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project1_Starter_Code.dir/BlockComment.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/animation/bjt73/Desktop/Project1/BlockComment.cpp -o CMakeFiles/Project1_Starter_Code.dir/BlockComment.cpp.s
+
+CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.o: CMakeFiles/Project1_Starter_Code.dir/flags.make
+CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.o: ../BadStringAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.o -c /users/animation/bjt73/Desktop/Project1/BadStringAutomaton.cpp
+
+CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/animation/bjt73/Desktop/Project1/BadStringAutomaton.cpp > CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.i
+
+CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/animation/bjt73/Desktop/Project1/BadStringAutomaton.cpp -o CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.s
+
+CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.o: CMakeFiles/Project1_Starter_Code.dir/flags.make
+CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.o: ../BadCommentAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.o -c /users/animation/bjt73/Desktop/Project1/BadCommentAutomaton.cpp
+
+CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/animation/bjt73/Desktop/Project1/BadCommentAutomaton.cpp > CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.i
+
+CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/animation/bjt73/Desktop/Project1/BadCommentAutomaton.cpp -o CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.s
+
 # Object files for target Project1_Starter_Code
 Project1_Starter_Code_OBJECTS = \
 "CMakeFiles/Project1_Starter_Code.dir/ColonAutomaton.cpp.o" \
@@ -310,7 +362,11 @@ Project1_Starter_Code_OBJECTS = \
 "CMakeFiles/Project1_Starter_Code.dir/FactsAutomaton.cpp.o" \
 "CMakeFiles/Project1_Starter_Code.dir/RulesAutomaton.cpp.o" \
 "CMakeFiles/Project1_Starter_Code.dir/QueriesAutomaton.cpp.o" \
-"CMakeFiles/Project1_Starter_Code.dir/StringAutomaton.cpp.o"
+"CMakeFiles/Project1_Starter_Code.dir/StringAutomaton.cpp.o" \
+"CMakeFiles/Project1_Starter_Code.dir/LineCommentAutomaton.cpp.o" \
+"CMakeFiles/Project1_Starter_Code.dir/BlockComment.cpp.o" \
+"CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.o" \
+"CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.o"
 
 # External object files for target Project1_Starter_Code
 Project1_Starter_Code_EXTERNAL_OBJECTS =
@@ -333,9 +389,13 @@ Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/FactsAutomaton.cpp.o
 Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/RulesAutomaton.cpp.o
 Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/QueriesAutomaton.cpp.o
 Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/StringAutomaton.cpp.o
+Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/LineCommentAutomaton.cpp.o
+Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/BlockComment.cpp.o
+Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.o
+Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.o
 Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/build.make
 Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable Project1_Starter_Code"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/animation/bjt73/Desktop/Project1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable Project1_Starter_Code"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Project1_Starter_Code.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

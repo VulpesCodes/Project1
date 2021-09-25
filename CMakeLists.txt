@@ -39,4 +39,10 @@ add_executable(Project1_Starter_Code
         RulesAutomaton.cpp
         RulesAutomaton.h
         QueriesAutomaton.cpp
-        QueriesAutomaton.h StringAutomaton.cpp StringAutomaton.h)
+        QueriesAutomaton.h
+        StringAutomaton.cpp
+        StringAutomaton.h
+        LineCommentAutomaton.cpp
+        LineCommentAutomaton.h
+        BlockComment.cpp
+        BlockComment.h BadStringAutomaton.cpp BadStringAutomaton.h BadCommentAutomaton.cpp BadCommentAutomaton.h)

@@ -6,6 +6,16 @@ CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.o
  /users/animation/bjt73/Desktop/Project1/AddAutomaton.h
  /users/animation/bjt73/Desktop/Project1/Automaton.h
  /users/animation/bjt73/Desktop/Project1/Token.h
+CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.o
+ /users/animation/bjt73/Desktop/Project1/Automaton.h
+ /users/animation/bjt73/Desktop/Project1/BadStringAutomaton.cpp
+ /users/animation/bjt73/Desktop/Project1/BadStringAutomaton.h
+ /users/animation/bjt73/Desktop/Project1/Token.h
+CMakeFiles/Project1_Starter_Code.dir/BlockComment.cpp.o
+ /users/animation/bjt73/Desktop/Project1/Automaton.h
+ /users/animation/bjt73/Desktop/Project1/BlockComment.cpp
+ /users/animation/bjt73/Desktop/Project1/BlockComment.h
+ /users/animation/bjt73/Desktop/Project1/Token.h
 CMakeFiles/Project1_Starter_Code.dir/ColonAutomaton.cpp.o
  /users/animation/bjt73/Desktop/Project1/Automaton.h
  /users/animation/bjt73/Desktop/Project1/ColonAutomaton.cpp
@@ -37,6 +47,8 @@ CMakeFiles/Project1_Starter_Code.dir/LeftParenAutomaton.cpp.o
 CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o
  /users/animation/bjt73/Desktop/Project1/AddAutomaton.h
  /users/animation/bjt73/Desktop/Project1/Automaton.h
+ /users/animation/bjt73/Desktop/Project1/BadStringAutomaton.h
+ /users/animation/bjt73/Desktop/Project1/BlockComment.h
  /users/animation/bjt73/Desktop/Project1/ColonAutomaton.h
  /users/animation/bjt73/Desktop/Project1/ColonDashAutomaton.h
  /users/animation/bjt73/Desktop/Project1/CommaAutomaton.h
@@ -45,6 +57,7 @@ CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o
  /users/animation/bjt73/Desktop/Project1/LeftParenAutomaton.h
  /users/animation/bjt73/Desktop/Project1/Lexer.cpp
  /users/animation/bjt73/Desktop/Project1/Lexer.h
+ /users/animation/bjt73/Desktop/Project1/LineCommentAutomaton.h
  /users/animation/bjt73/Desktop/Project1/MultiplyAutomaton.h
  /users/animation/bjt73/Desktop/Project1/PeriodAutomaton.h
  /users/animation/bjt73/Desktop/Project1/QMarkAutomaton.h
@@ -52,6 +65,12 @@ CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o
  /users/animation/bjt73/Desktop/Project1/RightParenAutomaton.h
  /users/animation/bjt73/Desktop/Project1/RulesAutomaton.h
  /users/animation/bjt73/Desktop/Project1/SchemesAutomaton.h
+ /users/animation/bjt73/Desktop/Project1/StringAutomaton.h
+ /users/animation/bjt73/Desktop/Project1/Token.h
+CMakeFiles/Project1_Starter_Code.dir/LineCommentAutomaton.cpp.o
+ /users/animation/bjt73/Desktop/Project1/Automaton.h
+ /users/animation/bjt73/Desktop/Project1/LineCommentAutomaton.cpp
+ /users/animation/bjt73/Desktop/Project1/LineCommentAutomaton.h
  /users/animation/bjt73/Desktop/Project1/Token.h
 CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.o
  /users/animation/bjt73/Desktop/Project1/Automaton.h
@@ -85,6 +104,11 @@ CMakeFiles/Project1_Starter_Code.dir/SchemesAutomaton.cpp.o
  /users/animation/bjt73/Desktop/Project1/Automaton.h
  /users/animation/bjt73/Desktop/Project1/SchemesAutomaton.cpp
  /users/animation/bjt73/Desktop/Project1/SchemesAutomaton.h
+ /users/animation/bjt73/Desktop/Project1/Token.h
+CMakeFiles/Project1_Starter_Code.dir/StringAutomaton.cpp.o
+ /users/animation/bjt73/Desktop/Project1/Automaton.h
+ /users/animation/bjt73/Desktop/Project1/StringAutomaton.cpp
+ /users/animation/bjt73/Desktop/Project1/StringAutomaton.h
  /users/animation/bjt73/Desktop/Project1/Token.h
 CMakeFiles/Project1_Starter_Code.dir/Token.cpp.o
  /users/animation/bjt73/Desktop/Project1/Token.cpp

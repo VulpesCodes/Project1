@@ -150,6 +150,87 @@ AddAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/AddAutomaton.cpp.s
 .PHONY : AddAutomaton.cpp.s
 
+BadCommentAutomaton.o: BadCommentAutomaton.cpp.o
+
+.PHONY : BadCommentAutomaton.o
+
+# target to build an object file
+BadCommentAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.o
+.PHONY : BadCommentAutomaton.cpp.o
+
+BadCommentAutomaton.i: BadCommentAutomaton.cpp.i
+
+.PHONY : BadCommentAutomaton.i
+
+# target to preprocess a source file
+BadCommentAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.i
+.PHONY : BadCommentAutomaton.cpp.i
+
+BadCommentAutomaton.s: BadCommentAutomaton.cpp.s
+
+.PHONY : BadCommentAutomaton.s
+
+# target to generate assembly for a file
+BadCommentAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/BadCommentAutomaton.cpp.s
+.PHONY : BadCommentAutomaton.cpp.s
+
+BadStringAutomaton.o: BadStringAutomaton.cpp.o
+
+.PHONY : BadStringAutomaton.o
+
+# target to build an object file
+BadStringAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.o
+.PHONY : BadStringAutomaton.cpp.o
+
+BadStringAutomaton.i: BadStringAutomaton.cpp.i
+
+.PHONY : BadStringAutomaton.i
+
+# target to preprocess a source file
+BadStringAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.i
+.PHONY : BadStringAutomaton.cpp.i
+
+BadStringAutomaton.s: BadStringAutomaton.cpp.s
+
+.PHONY : BadStringAutomaton.s
+
+# target to generate assembly for a file
+BadStringAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/BadStringAutomaton.cpp.s
+.PHONY : BadStringAutomaton.cpp.s
+
+BlockComment.o: BlockComment.cpp.o
+
+.PHONY : BlockComment.o
+
+# target to build an object file
+BlockComment.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/BlockComment.cpp.o
+.PHONY : BlockComment.cpp.o
+
+BlockComment.i: BlockComment.cpp.i
+
+.PHONY : BlockComment.i
+
+# target to preprocess a source file
+BlockComment.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/BlockComment.cpp.i
+.PHONY : BlockComment.cpp.i
+
+BlockComment.s: BlockComment.cpp.s
+
+.PHONY : BlockComment.s
+
+# target to generate assembly for a file
+BlockComment.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/BlockComment.cpp.s
+.PHONY : BlockComment.cpp.s
+
 ColonAutomaton.o: ColonAutomaton.cpp.o
 
 .PHONY : ColonAutomaton.o
@@ -338,6 +419,33 @@ Lexer.s: Lexer.cpp.s
 Lexer.cpp.s:
 	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.s
 .PHONY : Lexer.cpp.s
+
+LineCommentAutomaton.o: LineCommentAutomaton.cpp.o
+
+.PHONY : LineCommentAutomaton.o
+
+# target to build an object file
+LineCommentAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/LineCommentAutomaton.cpp.o
+.PHONY : LineCommentAutomaton.cpp.o
+
+LineCommentAutomaton.i: LineCommentAutomaton.cpp.i
+
+.PHONY : LineCommentAutomaton.i
+
+# target to preprocess a source file
+LineCommentAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/LineCommentAutomaton.cpp.i
+.PHONY : LineCommentAutomaton.cpp.i
+
+LineCommentAutomaton.s: LineCommentAutomaton.cpp.s
+
+.PHONY : LineCommentAutomaton.s
+
+# target to generate assembly for a file
+LineCommentAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/LineCommentAutomaton.cpp.s
+.PHONY : LineCommentAutomaton.cpp.s
 
 MultiplyAutomaton.o: MultiplyAutomaton.cpp.o
 
@@ -621,6 +729,15 @@ help:
 	@echo "... AddAutomaton.o"
 	@echo "... AddAutomaton.i"
 	@echo "... AddAutomaton.s"
+	@echo "... BadCommentAutomaton.o"
+	@echo "... BadCommentAutomaton.i"
+	@echo "... BadCommentAutomaton.s"
+	@echo "... BadStringAutomaton.o"
+	@echo "... BadStringAutomaton.i"
+	@echo "... BadStringAutomaton.s"
+	@echo "... BlockComment.o"
+	@echo "... BlockComment.i"
+	@echo "... BlockComment.s"
 	@echo "... ColonAutomaton.o"
 	@echo "... ColonAutomaton.i"
 	@echo "... ColonAutomaton.s"
@@ -642,6 +759,9 @@ help:
 	@echo "... Lexer.o"
 	@echo "... Lexer.i"
 	@echo "... Lexer.s"
+	@echo "... LineCommentAutomaton.o"
+	@echo "... LineCommentAutomaton.i"
+	@echo "... LineCommentAutomaton.s"
 	@echo "... MultiplyAutomaton.o"
 	@echo "... MultiplyAutomaton.i"
 	@echo "... MultiplyAutomaton.s"

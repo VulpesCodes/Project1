@@ -93,6 +93,24 @@
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/Automaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/BadCommentAutomaton.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/BadCommentAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/BadStringAutomaton.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/BadStringAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/BlockComment.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/BlockComment.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/ColonAutomaton.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
@@ -133,6 +151,12 @@
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/Lexer.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/LineCommentAutomaton.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/LineCommentAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/MultiplyAutomaton.cpp">
