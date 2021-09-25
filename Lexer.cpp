@@ -8,6 +8,12 @@
 #include "RightParenAutomaton.h"
 #include "MultiplyAutomaton.h"
 #include "AddAutomaton.h"
+#include "SchemesAutomaton.h"
+#include "IDAutomaton.h"
+#include "FactsAutomaton.h"
+#include "RulesAutomaton.h"
+#include "QueriesAutomaton.h"
+#include "StringAutomaton.h"
 #include <iostream>
 #include <fstream>
 
@@ -29,6 +35,15 @@ void Lexer::CreateAutomata() {
     automata.push_back(new RightParenAutomaton());
     automata.push_back(new MultiplyAutomaton());
     automata.push_back(new AddAutomaton());
+
+    automata.push_back(new SchemesAutomaton());
+    automata.push_back(new FactsAutomaton());
+    automata.push_back(new RulesAutomaton());
+    automata.push_back(new QueriesAutomaton());
+
+    automata.push_back(new StringAutomaton());
+
+    automata.push_back(new IDAutomaton());
 
     // TODO: Add the other needed automata here
 }

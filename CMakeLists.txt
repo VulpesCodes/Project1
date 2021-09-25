@@ -17,4 +17,26 @@ add_executable(Project1_Starter_Code
         Lexer.h
         main.cpp
         Token.cpp
-        Token.h PeriodAutomaton.cpp PeriodAutomaton.h QMarkAutomaton.cpp QMarkAutomaton.h LeftParenAutomaton.cpp LeftParenAutomaton.h RightParenAutomaton.cpp RightParenAutomaton.h MultiplyAutomaton.cpp MultiplyAutomaton.h AddAutomaton.cpp AddAutomaton.h)
+        Token.h
+        PeriodAutomaton.cpp
+        PeriodAutomaton.h
+        QMarkAutomaton.cpp
+        QMarkAutomaton.h
+        LeftParenAutomaton.cpp
+        LeftParenAutomaton.h
+        RightParenAutomaton.cpp
+        RightParenAutomaton.h
+        MultiplyAutomaton.cpp
+        MultiplyAutomaton.h
+        AddAutomaton.cpp
+        AddAutomaton.h
+        SchemesAutomaton.cpp
+        SchemesAutomaton.h
+        IDAutomaton.cpp
+        IDAutomaton.h
+        FactsAutomaton.cpp
+        FactsAutomaton.h
+        RulesAutomaton.cpp
+        RulesAutomaton.h
+        QueriesAutomaton.cpp
+        QueriesAutomaton.h StringAutomaton.cpp StringAutomaton.h)

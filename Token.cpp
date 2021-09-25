@@ -26,6 +26,7 @@ std::string Token::TokenTypeToString(TokenType type){
         case TokenType::UNDEFINED: return "UNDEFINED"; break;
         case TokenType::EOFILE: return "EOF"; break;
     }
+    return "";
 }
 
 Token::Token(TokenType type,std::string input, int i) {
