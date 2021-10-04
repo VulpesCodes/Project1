@@ -6,19 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/users/animation/bjt73/Desktop/Project1/Automaton.h
-Token.h
-/users/animation/bjt73/Desktop/Project1/Token.h
+/users/animation/bjt73/Desktop/Project1/DatalogProgram.cpp
+DatalogProgram.h
+/users/animation/bjt73/Desktop/Project1/DatalogProgram.h
 
-/users/animation/bjt73/Desktop/Project1/StringAutomaton.cpp
-StringAutomaton.h
-/users/animation/bjt73/Desktop/Project1/StringAutomaton.h
-
-/users/animation/bjt73/Desktop/Project1/StringAutomaton.h
-Automaton.h
-/users/animation/bjt73/Desktop/Project1/Automaton.h
-
-/users/animation/bjt73/Desktop/Project1/Token.h
+/users/animation/bjt73/Desktop/Project1/DatalogProgram.h
 string
+-
+vector
 -
 

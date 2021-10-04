@@ -36,6 +36,9 @@ CMakeFiles/Project1_Starter_Code.dir/CommaAutomaton.cpp.o
  /users/animation/bjt73/Desktop/Project1/CommaAutomaton.cpp
  /users/animation/bjt73/Desktop/Project1/CommaAutomaton.h
  /users/animation/bjt73/Desktop/Project1/Token.h
+CMakeFiles/Project1_Starter_Code.dir/DatalogProgram.cpp.o
+ /users/animation/bjt73/Desktop/Project1/DatalogProgram.cpp
+ /users/animation/bjt73/Desktop/Project1/DatalogProgram.h
 CMakeFiles/Project1_Starter_Code.dir/FactsAutomaton.cpp.o
  /users/animation/bjt73/Desktop/Project1/FactsAutomaton.cpp
  /users/animation/bjt73/Desktop/Project1/FactsAutomaton.h
@@ -83,6 +86,10 @@ CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.o
  /users/animation/bjt73/Desktop/Project1/MultiplyAutomaton.cpp
  /users/animation/bjt73/Desktop/Project1/MultiplyAutomaton.h
  /users/animation/bjt73/Desktop/Project1/Token.h
+CMakeFiles/Project1_Starter_Code.dir/Parser.cpp.o
+ /users/animation/bjt73/Desktop/Project1/Parser.cpp
+ /users/animation/bjt73/Desktop/Project1/Parser.h
+ /users/animation/bjt73/Desktop/Project1/Token.h
 CMakeFiles/Project1_Starter_Code.dir/PeriodAutomaton.cpp.o
  /users/animation/bjt73/Desktop/Project1/Automaton.h
  /users/animation/bjt73/Desktop/Project1/PeriodAutomaton.cpp
@@ -122,5 +129,6 @@ CMakeFiles/Project1_Starter_Code.dir/Token.cpp.o
 CMakeFiles/Project1_Starter_Code.dir/main.cpp.o
  /users/animation/bjt73/Desktop/Project1/Automaton.h
  /users/animation/bjt73/Desktop/Project1/Lexer.h
+ /users/animation/bjt73/Desktop/Project1/Parser.h
  /users/animation/bjt73/Desktop/Project1/Token.h
  /users/animation/bjt73/Desktop/Project1/main.cpp

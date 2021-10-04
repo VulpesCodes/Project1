@@ -36,6 +36,9 @@ CMakeFiles/Project1_Starter_Code.dir/CommaAutomaton.cpp.o: ../CommaAutomaton.cpp
 CMakeFiles/Project1_Starter_Code.dir/CommaAutomaton.cpp.o: ../CommaAutomaton.h
 CMakeFiles/Project1_Starter_Code.dir/CommaAutomaton.cpp.o: ../Token.h
 
+CMakeFiles/Project1_Starter_Code.dir/DatalogProgram.cpp.o: ../DatalogProgram.cpp
+CMakeFiles/Project1_Starter_Code.dir/DatalogProgram.cpp.o: ../DatalogProgram.h
+
 CMakeFiles/Project1_Starter_Code.dir/FactsAutomaton.cpp.o: ../FactsAutomaton.cpp
 CMakeFiles/Project1_Starter_Code.dir/FactsAutomaton.cpp.o: ../FactsAutomaton.h
 
@@ -83,6 +86,10 @@ CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.o: ../MultiplyAutomat
 CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.o: ../MultiplyAutomaton.h
 CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.o: ../Token.h
 
+CMakeFiles/Project1_Starter_Code.dir/Parser.cpp.o: ../Parser.cpp
+CMakeFiles/Project1_Starter_Code.dir/Parser.cpp.o: ../Parser.h
+CMakeFiles/Project1_Starter_Code.dir/Parser.cpp.o: ../Token.h
+
 CMakeFiles/Project1_Starter_Code.dir/PeriodAutomaton.cpp.o: ../Automaton.h
 CMakeFiles/Project1_Starter_Code.dir/PeriodAutomaton.cpp.o: ../PeriodAutomaton.cpp
 CMakeFiles/Project1_Starter_Code.dir/PeriodAutomaton.cpp.o: ../PeriodAutomaton.h
@@ -121,6 +128,7 @@ CMakeFiles/Project1_Starter_Code.dir/Token.cpp.o: ../Token.h
 
 CMakeFiles/Project1_Starter_Code.dir/main.cpp.o: ../Automaton.h
 CMakeFiles/Project1_Starter_Code.dir/main.cpp.o: ../Lexer.h
+CMakeFiles/Project1_Starter_Code.dir/main.cpp.o: ../Parser.h
 CMakeFiles/Project1_Starter_Code.dir/main.cpp.o: ../Token.h
 CMakeFiles/Project1_Starter_Code.dir/main.cpp.o: ../main.cpp
 

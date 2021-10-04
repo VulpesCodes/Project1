@@ -43,6 +43,10 @@ TokenType Token::getType() {
     return tokenName;
 }
 
+std::string Token::getDesc() {
+    return description;
+}
+
 
 
 

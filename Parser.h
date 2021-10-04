@@ -9,6 +9,8 @@
 #include "Token.h"
 #include <iostream>
 #include <fstream>
+#include "DatalogProgram.h"
+
 
 class Parser
 {
@@ -16,37 +18,37 @@ private:
     std::vector<Token*> tokens;
     unsigned int index = 0;
 
-    void parseDatalogProgram();
+    DatalogProgram parseDatalogProgram();
 
     void parseSchemeList();
     void parseFactList();
     void parseRuleList();
     void parseQueryList();
 
-    void parseScheme();
-    void parseFact();
-    void parseRule();
-    void parseQuery();
+    Predicate parseScheme();
+    Predicate parseFact();
+    Rule parseRule();
+    Predicate parseQuery();
 
-    void parseHeadPredicate();
-    void parsePredicate();
+    Predicate parseHeadPredicate();
+    Predicate parsePredicate();
 
-    void parsePredicateList();
-    void parseParameterList();
-    void parseStringList();
-    void parseIdList();
-    void parseParameter();
+    std::vector<Predicate> parsePredicateList();
+    std::vector<Parameter> parseParameterList();
+    std::vector<Parameter> parseStringList();
+    std::vector<Parameter> parseIdList();
+    Parameter parseParameter();
 
     void checkSchemes();
     void checkColon();
     void checkFacts();
     void checkRules();
     void checkQueries();
-    void checkID();
+    Parameter checkID();
     void checkLeftParen();
     void checkRightParen();
     void checkColonDash();
-    void checkString();
+    Parameter checkString();
     void checkComma();
     void checkQMark();
     void checkEOF();
@@ -63,7 +65,7 @@ public:
     Parser();
     ~Parser();
 
-    void Parse(std::vector<Token*>);
+    DatalogProgram Parse(std::vector<Token*>);
     //DatalogProgram parse();
 
 

@@ -38,6 +38,7 @@ public:
     std::string TokenTypeToString(TokenType type);
     std::string toString(void);
     TokenType getType();
+    std::string getDesc();
     // TODO: add other needed methods
     Token(TokenType type ,std::string basicString, int i);
 };

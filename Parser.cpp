@@ -34,8 +34,9 @@ void Parser::removeComments() {
 }
 
 
-void Parser::Parse(std::vector<Token*> tokenlist) {
+DatalogProgram Parser::Parse(std::vector<Token*> tokenlist) {
     tokens = tokenlist;
+    DatalogProgram* datalog = new DatalogProgram;
     removeComments();
     try {
         parseDatalogProgram();
@@ -45,9 +46,9 @@ void Parser::Parse(std::vector<Token*> tokenlist) {
         std::cout << "Failure!" << std::endl << "\t" << error->toString();
     }
 
-
+    return *datalog;
 }
-void Parser::parseDatalogProgram() {
+DatalogProgram Parser::parseDatalogProgram() {
     checkSchemes();
     checkColon();
     parseScheme();
@@ -90,14 +91,14 @@ void Parser::parseQueryList() {
     }
 }
 
-void Parser::parseScheme() {
+Predicate Parser::parseScheme() {
     checkID();
     checkLeftParen();
     checkID();
     parseIdList();
     checkRightParen();
 }
-void Parser::parseFact() {
+Predicate Parser::parseFact() {
     checkID();
     checkLeftParen();
     checkString();
@@ -105,26 +106,26 @@ void Parser::parseFact() {
     checkRightParen();
     checkPeriod();
 }
-void Parser::parseRule() {
+Rule Parser::parseRule() {
     parseHeadPredicate();
     checkColonDash();
     parsePredicate();
     parsePredicateList();
     checkPeriod();
 }
-void Parser::parseQuery() {
+Predicate Parser::parseQuery() {
     parsePredicate();
     checkQMark();
 }
 
-void Parser::parseHeadPredicate() {
+Predicate Parser::parseHeadPredicate() {
     checkID();
     checkLeftParen();
     checkID();
     parseIdList();
     checkRightParen();
 }
-void Parser::parsePredicate() {
+Predicate Parser::parsePredicate() {
     checkID();
     checkLeftParen();
     parseParameter();
@@ -132,35 +133,35 @@ void Parser::parsePredicate() {
     checkRightParen();
 }
 
-void Parser::parsePredicateList() {
+std::vector<Predicate> Parser::parsePredicateList() {
     if (getToken()->getType() == TokenType::COMMA) {
         checkComma();
         parsePredicate();
         parsePredicateList();
     }
 }
-void Parser::parseParameterList() {
+std::vector<Parameter> Parser::parseParameterList() {
     if (getToken()->getType() == TokenType::COMMA) {
         checkComma();
         parseParameter();
         parseParameterList();
     }
 }
-void Parser::parseStringList() {
+std::vector<Parameter> Parser::parseStringList() {
     if (getToken()->getType() == TokenType::COMMA) {
         checkComma();
         checkString();
         parseStringList();
     }
 }
-void Parser::parseIdList() {
+std::vector<Parameter> Parser::parseIdList() {
     if (getToken()->getType() == TokenType::COMMA) {
         checkComma();
         checkID();
         parseIdList();
     }
 }
-void Parser::parseParameter() {
+Parameter Parser::parseParameter() {
     if (getToken()->getType() == TokenType::STRING) {
         checkString();
     }
@@ -215,8 +216,11 @@ void Parser::checkQueries() {
         throw getToken();
     }
 }
-void Parser::checkID() {
+Parameter Parser::checkID() {
     if (getToken()->getType() == TokenType::ID) {
+        Parameter id;
+        id.setString(getToken()->getDesc());
+        return id;
         nextToken();
     }
     else {
@@ -247,8 +251,11 @@ void Parser::checkColonDash() {
         throw getToken();
     }
 }
-void Parser::checkString() {
+Parameter Parser::checkString() {
     if (getToken()->getType() == TokenType::STRING) {
+        Parameter string;
+        string.setString(getToken()->getDesc());
+        return string;
         nextToken();
     }
     else {

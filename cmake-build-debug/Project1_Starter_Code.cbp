@@ -129,6 +129,12 @@
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/CommaAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/DatalogProgram.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/DatalogProgram.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/FactsAutomaton.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
@@ -165,6 +171,12 @@
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/MultiplyAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/Parameter.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/Parameter.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/Parser.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
@@ -175,6 +187,12 @@
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/PeriodAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/Predicate.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/Predicate.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/QMarkAutomaton.cpp">
@@ -193,6 +211,12 @@
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/RightParenAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/Rule.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/Rule.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/RulesAutomaton.cpp">
