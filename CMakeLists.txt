@@ -47,4 +47,4 @@ add_executable(Project1_Starter_Code
         LineCommentAutomaton.cpp
         LineCommentAutomaton.h
         BlockComment.cpp
-        BlockComment.h BadStringAutomaton.cpp BadStringAutomaton.h BadCommentAutomaton.cpp BadCommentAutomaton.h)
+        BlockComment.h BadStringAutomaton.cpp BadStringAutomaton.h BadCommentAutomaton.cpp BadCommentAutomaton.h Parser.cpp Parser.h)

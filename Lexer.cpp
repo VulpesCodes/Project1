@@ -58,13 +58,13 @@ void Lexer::CreateAutomata() {
     // TODO: Add the other needed automata here
 }
 
-std::string Lexer::tokenstoString() {
+/*std::string Lexer::tokenstoString() {
     for (unsigned int i = 0; i < tokens.size(); i++) {
         std::cout << tokens[i]->toString()<< std::endl;
     }
     std::cout << "Total Tokens = " << tokens.size();
     return "";
-}
+}*/
 
 std::string Lexer::descCreate(int value, std::string input) {
     std::string desc = "";
@@ -74,6 +74,11 @@ std::string Lexer::descCreate(int value, std::string input) {
     }
     return desc;
 }
+
+std::vector<Token*> Lexer::returnTokens() {
+    return tokens;
+}
+
 
 void Lexer::Run(std::string& input) {
     // TODO: convert this pseudo-code with the algorithm into actual C++ code
@@ -159,5 +164,5 @@ void Lexer::Run(std::string& input) {
     }
     Token *newToken = new Token(TokenType::EOFILE,"", lineNumber);
     tokens.push_back(newToken);
-    tokenstoString();
+    //tokenstoString();
 }

@@ -12,7 +12,7 @@ private:
 
     void CreateAutomata();
 
-    std::string tokenstoString();
+    //std::string tokenstoString();
 
     std::string descCreate(int value,std::string input);
 
@@ -23,6 +23,7 @@ public:
     ~Lexer();
 
     void Run(std::string& input);
+    std::vector<Token*> returnTokens();
 
 
     

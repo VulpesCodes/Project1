@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o"
   "CMakeFiles/Project1_Starter_Code.dir/LineCommentAutomaton.cpp.o"
   "CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.o"
+  "CMakeFiles/Project1_Starter_Code.dir/Parser.cpp.o"
   "CMakeFiles/Project1_Starter_Code.dir/PeriodAutomaton.cpp.o"
   "CMakeFiles/Project1_Starter_Code.dir/QMarkAutomaton.cpp.o"
   "CMakeFiles/Project1_Starter_Code.dir/QueriesAutomaton.cpp.o"

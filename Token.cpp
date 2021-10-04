@@ -39,6 +39,10 @@ std::string Token::toString() {
     return "(" + TokenTypeToString(tokenName) + ",\"" + description + "\"," + std::to_string(lineNumber) + ")";
 }
 
+TokenType Token::getType() {
+    return tokenName;
+}
+
 
 
 
