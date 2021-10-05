@@ -18,12 +18,12 @@ private:
     std::vector<Token*> tokens;
     unsigned int index = 0;
 
-    DatalogProgram parseDatalogProgram();
+    DatalogProgram parseDatalogProgram(DatalogProgram);
 
-    void parseSchemeList();
-    void parseFactList();
-    void parseRuleList();
-    void parseQueryList();
+    std::vector<Predicate> parseSchemeList();
+    std::vector<Predicate> parseFactList();
+    std::vector<Rule> parseRuleList();
+    std::vector<Predicate> parseQueryList();
 
     Predicate parseScheme();
     Predicate parseFact();

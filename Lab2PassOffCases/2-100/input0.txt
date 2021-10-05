@@ -32,4 +32,3 @@ csg(Course,'33333',Grade)?cp(Course,'CS100')?cdh
 ?before('CS100','CS206')?before('CS100',
 prerequisiteTo)?Schedule('Snoopy',C,R,D,H)?
 Grades('Snoopy',C,G)?Students('CS101',R,N,G)?
-

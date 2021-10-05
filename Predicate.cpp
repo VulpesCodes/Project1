@@ -16,7 +16,7 @@ void Predicate::setID(std::string input) {
     id=input;
 }
 
-void Predicate::addParameter(Parameter * input) {
+void Predicate::addParameter(Parameter input) {
     parameters.push_back(input);
 }
 
@@ -27,9 +27,13 @@ std::string Predicate::toString() {
         if (i != 0) {
             output += ",";
         }
-        output += parameters[i]->toString();
+        output += parameters[i].toString();
 
     }
     output += ")";
     return output;
+}
+
+std::vector<Parameter> Predicate::returnParameters() {
+    return parameters;
 }

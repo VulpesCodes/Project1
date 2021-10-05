@@ -13,15 +13,15 @@
 class Rule
 {
 private:
-    Predicate* headPredicate;
-    std::vector<Predicate*> bodyPredicates;
+    Predicate headPredicate;
+    std::vector<Predicate> bodyPredicates;
 
 
 public:
     Rule();
     ~Rule();
-    void setHeadPredicate(Predicate*);
-    void addPredicates(Predicate*);
+    void setHeadPredicate(Predicate);
+    void addPredicates(Predicate);
     std::string toString();
 };
 

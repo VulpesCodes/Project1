@@ -36,137 +36,225 @@ void Parser::removeComments() {
 
 DatalogProgram Parser::Parse(std::vector<Token*> tokenlist) {
     tokens = tokenlist;
-    DatalogProgram* datalog = new DatalogProgram;
+    DatalogProgram datalog;
     removeComments();
     try {
-        parseDatalogProgram();
-        std::cout << "Success!";
+        datalog = parseDatalogProgram(datalog);
+        std::cout << "Success!" << std::endl;
+        std::cout << datalog.toString();
     }
     catch (Token* error) {
         std::cout << "Failure!" << std::endl << "\t" << error->toString();
     }
 
-    return *datalog;
+    return datalog;
 }
-DatalogProgram Parser::parseDatalogProgram() {
+DatalogProgram Parser::parseDatalogProgram(DatalogProgram datalog) {
+    std::vector<Predicate> schemes;
+    std::vector<Predicate> facts;
+    std::vector<Rule> rules;
+    std::vector<Predicate> queries;
     checkSchemes();
     checkColon();
-    parseScheme();
-    parseSchemeList();
+    datalog.addSchemes(parseScheme());
+    schemes = parseSchemeList();
     checkFacts();
     checkColon();
-    parseFactList();
+    facts = parseFactList();
     checkRules();
     checkColon();
-    parseRuleList();
+    rules = parseRuleList();
     checkQueries();
     checkColon();
-    parseQuery();
-    parseQueryList();
+    datalog.addQueries(parseQuery());
+    queries = parseQueryList();
     checkEOF();
+    for (unsigned int i = 0; i < schemes.size(); ++i) {
+        datalog.addSchemes(schemes[i]);
+    }
+    for (unsigned int i = 0; i < facts.size(); ++i) {
+        datalog.addFacts(facts[i]);
+    }
+    for (unsigned int i = 0; i < rules.size(); ++i) {
+        datalog.addRules(rules[i]);
+    }
+    for (unsigned int i = 0; i < queries.size(); ++i) {
+        datalog.addQueries(queries[i]);
+    }
+
+    return datalog;
 }
 
-void Parser::parseSchemeList() {
+std::vector<Predicate> Parser::parseSchemeList() {
+    std::vector<Predicate> schemePredicates;
     if (getToken()->getType() == TokenType::ID) {
-        parseScheme();
-        parseSchemeList();
+        schemePredicates.push_back(parseScheme());
+        std::vector<Predicate> vector = parseSchemeList();
+        for (unsigned int i = 0; i < vector.size(); ++i) {
+            schemePredicates.push_back(vector[i]);
+        }
     }
+    return schemePredicates;
 }
-void Parser::parseFactList() {
+std::vector<Predicate> Parser::parseFactList() {
+    std::vector<Predicate> factPredicates;
     if (getToken()->getType() == TokenType::ID) {
-        parseFact();
-        parseFactList();
+        factPredicates.push_back(parseFact());
+        std::vector<Predicate> vector = parseFactList();
+        for (unsigned int i = 0; i < vector.size(); ++i) {
+            factPredicates.push_back(vector[i]);
+        }
     }
+    return factPredicates;
 }
-void Parser::parseRuleList() {
+std::vector<Rule> Parser::parseRuleList() {
+    std::vector<Rule> Rules;
     if (getToken()->getType() == TokenType::ID) {
-        parseRule();
-        parseRuleList();
+        Rules.push_back(parseRule());
+        std::vector<Rule> vector = parseRuleList();
+        for (unsigned int i = 0; i < vector.size(); ++i) {
+            Rules.push_back(vector[i]);
+        }
     }
+    return Rules;
 }
-void Parser::parseQueryList() {
+std::vector<Predicate> Parser::parseQueryList() {
+    std::vector<Predicate> queryPredicates;
     if (getToken()->getType() == TokenType::ID) {
-        parseQuery();
-        parseQueryList();
+        queryPredicates.push_back(parseQuery());
+        std::vector<Predicate> vector = parseQueryList();
+        for (unsigned int i = 0; i < vector.size(); ++i) {
+            queryPredicates.push_back(vector[i]);
+        }
     }
+    return queryPredicates;
 }
 
 Predicate Parser::parseScheme() {
+    Predicate predicate;
+    predicate.setID(checkID().toString());
+    checkLeftParen();
+    predicate.addParameter(checkID());
+    std::vector<Parameter> paramList = parseIdList();
+    checkRightParen();
+    for (unsigned int i = 0; i < paramList.size(); ++i) {
+        predicate.addParameter(paramList[i]);
+    }
+    return predicate;
+/*
     checkID();
     checkLeftParen();
     checkID();
     parseIdList();
     checkRightParen();
+    */
 }
 Predicate Parser::parseFact() {
-    checkID();
+    Predicate predicate;
+    predicate.setID(checkID().toString());
     checkLeftParen();
-    checkString();
-    parseStringList();
+    predicate.addParameter(checkString());
+    std::vector<Parameter> paramList = parseStringList();
     checkRightParen();
     checkPeriod();
+    for (unsigned int i = 0; i < paramList.size(); ++i) {
+        predicate.addParameter(paramList[i]);
+    }
+    return predicate;
 }
 Rule Parser::parseRule() {
-    parseHeadPredicate();
+    Rule rule;
+    rule.setHeadPredicate(parseHeadPredicate());
     checkColonDash();
-    parsePredicate();
-    parsePredicateList();
+    rule.addPredicates(parsePredicate());
+    std::vector<Predicate> predList = parsePredicateList();
+    for (unsigned int i = 0; i < predList.size(); ++i) {
+        rule.addPredicates(predList[i]);
+    }
     checkPeriod();
+    return rule;
 }
 Predicate Parser::parseQuery() {
-    parsePredicate();
+    Predicate predicate;
+    predicate = parsePredicate();
     checkQMark();
+    return predicate;
 }
 
 Predicate Parser::parseHeadPredicate() {
-    checkID();
+    Predicate predicate;
+    predicate.setID(checkID().toString());
     checkLeftParen();
-    checkID();
-    parseIdList();
+    predicate.addParameter(checkID());
+    std::vector<Parameter> paramList =parseIdList();
     checkRightParen();
+    for (unsigned int i = 0; i < paramList.size(); ++i) {
+        predicate.addParameter(paramList[i]);
+    }
+    return predicate;
 }
 Predicate Parser::parsePredicate() {
-    checkID();
+    Predicate predicate;
+    predicate.setID(checkID().toString());
     checkLeftParen();
-    parseParameter();
-    parseParameterList();
+    predicate.addParameter(parseParameter());
+    std::vector<Parameter> paramList = parseParameterList();
     checkRightParen();
+    for (unsigned int i = 0; i < paramList.size(); ++i) {
+        predicate.addParameter(paramList[i]);
+    }
+    return predicate;
 }
 
 std::vector<Predicate> Parser::parsePredicateList() {
+    std::vector<Predicate> vector;
     if (getToken()->getType() == TokenType::COMMA) {
         checkComma();
-        parsePredicate();
-        parsePredicateList();
+        Predicate first = parsePredicate();
+        vector = parsePredicateList();
+        vector.insert(vector.begin(),first);
     }
+    return vector;
 }
 std::vector<Parameter> Parser::parseParameterList() {
     if (getToken()->getType() == TokenType::COMMA) {
         checkComma();
-        parseParameter();
-        parseParameterList();
+        Parameter id = parseParameter();
+        std::vector<Parameter> vector = parseParameterList();
+        vector.insert(vector.begin(),id);
+        return vector;
     }
+    std::vector<Parameter> vector;
+    return vector;
 }
 std::vector<Parameter> Parser::parseStringList() {
     if (getToken()->getType() == TokenType::COMMA) {
         checkComma();
-        checkString();
-        parseStringList();
+        Parameter id = checkString();
+        std::vector<Parameter> vector = parseStringList();
+        vector.insert(vector.begin(),id);
+        return vector;
     }
+    std::vector<Parameter> vector;
+    return vector;
 }
 std::vector<Parameter> Parser::parseIdList() {
     if (getToken()->getType() == TokenType::COMMA) {
         checkComma();
-        checkID();
-        parseIdList();
+        Parameter id = checkID();
+        std::vector<Parameter> vector = parseIdList();
+        vector.insert(vector.begin(),id);
+        return vector;
     }
+    std::vector<Parameter> vector;
+    return vector;
 }
 Parameter Parser::parseParameter() {
     if (getToken()->getType() == TokenType::STRING) {
-        checkString();
+        return checkString();
     }
     else if (getToken()->getType() == TokenType::ID) {
-        checkID();
+        return checkID();
     }
     else {
         throw getToken();
@@ -220,8 +308,9 @@ Parameter Parser::checkID() {
     if (getToken()->getType() == TokenType::ID) {
         Parameter id;
         id.setString(getToken()->getDesc());
-        return id;
         nextToken();
+        return id;
+
     }
     else {
         throw getToken();
@@ -255,8 +344,9 @@ Parameter Parser::checkString() {
     if (getToken()->getType() == TokenType::STRING) {
         Parameter string;
         string.setString(getToken()->getDesc());
-        return string;
         nextToken();
+        return string;
+
     }
     else {
         throw getToken();

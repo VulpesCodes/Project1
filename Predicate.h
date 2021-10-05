@@ -13,7 +13,7 @@ class Predicate
 {
 private:
     std::string id;
-    std::vector<Parameter*> parameters;
+    std::vector<Parameter> parameters;
 
 
 
@@ -21,7 +21,8 @@ public:
     Predicate();
     ~Predicate();
     void setID(std::string);
-    void addParameter(Parameter*);
+    void addParameter(Parameter);
+    std::vector<Parameter> returnParameters();
     std::string toString();
 };
 
