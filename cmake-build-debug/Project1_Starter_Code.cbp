@@ -129,6 +129,12 @@
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/CommaAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/Database.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/Database.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/DatalogProgram.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
@@ -141,10 +147,22 @@
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/FactsAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/Header.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/Header.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/IDAutomaton.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/IDAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/Interpreter.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/Interpreter.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/LeftParenAutomaton.cpp">
@@ -207,6 +225,12 @@
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/QueriesAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/Relation.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/Relation.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/RightParenAutomaton.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
@@ -241,6 +265,12 @@
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/Token.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/Tuple.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/animation/bjt73/Desktop/Project1/Tuple.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/animation/bjt73/Desktop/Project1/main.cpp">

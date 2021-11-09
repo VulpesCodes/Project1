@@ -32,6 +32,9 @@ public:
     void addQueries(Predicate);
     void addRules(Rule);
     std::string toString();
+
+    std::vector<Predicate> getSchemes();
+    std::vector<Predicate> getFacts();
 };
 
 

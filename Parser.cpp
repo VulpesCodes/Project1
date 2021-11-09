@@ -36,7 +36,7 @@ void Parser::removeComments() {
 
 DatalogProgram Parser::Parse(std::vector<Token*> tokenlist) {
     tokens = tokenlist;
-    DatalogProgram datalog;
+
     removeComments();
     try {
         datalog = parseDatalogProgram(datalog);
@@ -384,4 +384,8 @@ void Parser::checkPeriod() {
     else {
         throw getToken();
     }
+}
+
+DatalogProgram Parser::getDatalog() {
+    return datalog;
 }

@@ -37,3 +37,7 @@ std::string Predicate::toString() {
 std::vector<Parameter> Predicate::returnParameters() {
     return parameters;
 }
+
+std::string Predicate::getID() {
+    return id;
+}

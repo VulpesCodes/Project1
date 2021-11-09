@@ -1,5 +1,6 @@
 #include "Lexer.h"
 #include "Parser.h"
+#include "Interpreter.h"
 #include "Token.h"
 #include <vector>
 #include <iostream>
@@ -28,6 +29,10 @@ int main(int argc, char** argv) {
     std::vector<Token*> currTokens = lexer->returnTokens();
     Parser* parser = new Parser();
     parser->Parse(currTokens);
+
+    Interpreter* interpreter = new Interpreter(parser->getDatalog());
+    interpreter->run();
+
 
     delete parser;
     delete lexer;

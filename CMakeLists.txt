@@ -47,4 +47,4 @@ add_executable(Project1_Starter_Code
         LineCommentAutomaton.cpp
         LineCommentAutomaton.h
         BlockComment.cpp
-        BlockComment.h BadStringAutomaton.cpp BadStringAutomaton.h BadCommentAutomaton.cpp BadCommentAutomaton.h Parser.cpp Parser.h DatalogProgram.cpp DatalogProgram.h Predicate.cpp Predicate.h Rule.cpp Rule.h Parameter.cpp Parameter.h)
+        BlockComment.h BadStringAutomaton.cpp BadStringAutomaton.h BadCommentAutomaton.cpp BadCommentAutomaton.h Parser.cpp Parser.h DatalogProgram.cpp DatalogProgram.h Predicate.cpp Predicate.h Rule.cpp Rule.h Parameter.cpp Parameter.h Database.cpp Database.h Tuple.cpp Tuple.h Header.cpp Header.h Relation.cpp Relation.h Interpreter.cpp Interpreter.h)

@@ -22,6 +22,7 @@ public:
     ~Predicate();
     void setID(std::string);
     void addParameter(Parameter);
+    std::string getID();
     std::vector<Parameter> returnParameters();
     std::string toString();
 };

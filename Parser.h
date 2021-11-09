@@ -17,6 +17,7 @@ class Parser
 private:
     std::vector<Token*> tokens;
     unsigned int index = 0;
+    DatalogProgram datalog;
 
     DatalogProgram parseDatalogProgram(DatalogProgram);
 
@@ -67,6 +68,7 @@ public:
 
     DatalogProgram Parse(std::vector<Token*>);
     //DatalogProgram parse();
+    DatalogProgram getDatalog();
 
 
     // TODO: add other public methods here
