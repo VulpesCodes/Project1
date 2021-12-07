@@ -45,7 +45,7 @@ std::string Relation::toStringQ() {
         output = "Yes(" + std::to_string(numberofTuples) + ")\n" + output;
     }
     else if (numberofTuples > 0) {
-        output = "Yes(" + std::to_string(numberofTuples) + ")\n";
+        output = "Yes(" + std::to_string(numberofTuples) + ")";
     }
     else {
         output = "No";

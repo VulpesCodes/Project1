@@ -1,4 +1,4 @@
-Schemes:
+Schemes: 
 	ab(A,B)
 Facts:
 	ab('joe','bob').
