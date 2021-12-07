@@ -23,6 +23,7 @@ public:
     void setHeader(Header);
     std::string getName();
     std::string toString();
+    std::string toStringQ();
 
     Relation select(int,std::string);
     Relation select(int,int);

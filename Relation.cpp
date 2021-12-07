@@ -7,14 +7,53 @@
 std::string Relation::toString() {
     std::string output ="";
     for (Tuple t :mySet) {
+        output+= "\t";
         for (unsigned int i = 0; i < header.getHeaders().size(); ++i) {
+            if (i >= 1) {
+                output+= ", ";
+            }
             output+= header.getHeaders()[i] + "=" + t.getTuple()[i] ;
+
         }
         output += "\n";
     }
 
     return output;
 }
+
+std::string Relation::toStringQ() {
+    std::string output ="";
+    int numberofTuples = 0;
+    unsigned int j=0;
+    for (Tuple t :mySet) {
+        j++;
+        numberofTuples++;
+        output+= "\t";
+        for (unsigned int i = 0; i < header.getHeaders().size(); ++i) {
+            if (i >= 1) {
+                output+= ", ";
+            }
+            output+= header.getHeaders()[i] + "=" + t.getTuple()[i] ;
+
+        }
+        if (j > 0 && output != "\t" && j < mySet.size()) {
+            output += "\n";
+        }
+
+    }
+    if (numberofTuples > 0 && output != "\t") {
+        output = "Yes(" + std::to_string(numberofTuples) + ")\n" + output;
+    }
+    else if (numberofTuples > 0) {
+        output = "Yes(" + std::to_string(numberofTuples) + ")\n";
+    }
+    else {
+        output = "No";
+    }
+
+    return output;
+}
+
 
 void Relation::addTuple(Tuple tuple) {
     mySet.insert(tuple);
@@ -62,7 +101,7 @@ Relation Relation::rename(std::vector<std::string> newHeader) {
     for (Tuple t :mySet) {
         std::vector<std::string> newTupleData;
         for (unsigned int i = 0; i < newHeader.size(); ++i) {
-            newTupleData.push_back(t.getTuple()[i]);
+            newTupleData = t.getTuple();
         }
         rename.addTuple(newTupleData);
     }

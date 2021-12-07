@@ -35,6 +35,7 @@ public:
 
     std::vector<Predicate> getSchemes();
     std::vector<Predicate> getFacts();
+    std::vector<Predicate> getQueries();
 };
 
 

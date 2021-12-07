@@ -40,11 +40,11 @@ DatalogProgram Parser::Parse(std::vector<Token*> tokenlist) {
     removeComments();
     try {
         datalog = parseDatalogProgram(datalog);
-        std::cout << "Success!" << std::endl;
-        std::cout << datalog.toString();
+        //std::cout << "Success!" << std::endl;
+        //std::cout << datalog.toString();
     }
     catch (Token* error) {
-        std::cout << "Failure!" << std::endl << "\t" << error->toString();
+        //std::cout << "Failure!" << std::endl << "\t" << error->toString();
     }
 
     return datalog;

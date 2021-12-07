@@ -36,12 +36,22 @@ void Interpreter::run() {
         evaluateFact(datalogProgram.getFacts()[i]);
 
     }
-    std::cout << database.printString();
-    evaluatePredicate(datalogProgram.getSchemes()[0]); //TEMP
+    //std::cout << database.printString();
+
+    for (unsigned int i = 0; i < datalogProgram.getQueries().size(); ++i) {
+        Relation query = evaluatePredicate(datalogProgram.getQueries()[i]);
+        std::cout <<  datalogProgram.getQueries()[i].toString() + "? " + query.toStringQ();
+        if (i < datalogProgram.getQueries().size()-1) {
+            std::cout << "\n";
+        }
+
+
+    }
+
 }
 
 Relation Interpreter::evaluatePredicate(Predicate p) {    //TEMP
-    std::vector<int> tempTest;
+    /*std::vector<int> tempTest;
     tempTest.push_back(0);
     std::vector<std::string> tempTest2;
     std::string tempTest3 = "'c'";
@@ -53,6 +63,45 @@ Relation Interpreter::evaluatePredicate(Predicate p) {    //TEMP
     std::cout<< database.getTables().find("SK")->second->rename(tempTest2).toString() + "rename\n";
 
     return database.getTables().find("SK")->second->project(tempTest);
+     */
+    Relation* relation = new Relation(*database.getTables().find(p.getID())->second);
+    std::map<std::string,int> variableMap;
+    std::vector<int> indexOrder;
+    std::vector<std::string> variableNames;
+    for (unsigned int i = 0; i < p.returnParameters().size(); ++i) {
+
+        if (p.returnParameters()[i].toString()[0] == '\'') {
+            *relation = relation->select(i,p.returnParameters()[i].toString());
+        }
+        else if ( variableMap.find(p.returnParameters()[i].toString()) == variableMap.end() ) {
+            std::string key = p.returnParameters()[i].toString();
+            variableMap.insert(std::pair<std::string,int>(key,i));
+            indexOrder.push_back(i);
+            variableNames.push_back(p.returnParameters()[i].toString());
+        }
+        else if (variableMap.find(p.returnParameters()[i].toString()) != variableMap.end()) {
+            *relation = relation->select(variableMap.find(p.returnParameters()[i].toString())->second,i);
+        }
+    }
+
+    if (indexOrder.size() > 0) {
+        relation = new Relation(relation->project(indexOrder));
+        relation = new Relation(relation->rename(variableNames));
+    }
+    else {
+        relation = new Relation(relation->project(indexOrder));
+        relation = new Relation(relation->rename(variableNames));
+    }
+
+
+
+
+
+    return *relation;
+}
+
+Relation Interpreter::evaluateQueries(Predicate p) {
+    return evaluatePredicate(p);
 }
 
 /*void Interpreter::addPredicate(Predicate p) {

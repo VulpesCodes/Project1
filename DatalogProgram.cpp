@@ -78,3 +78,7 @@ std::vector<Predicate> DatalogProgram::getSchemes() {
 std::vector<Predicate> DatalogProgram::getFacts() {
     return facts;
 }
+
+std::vector<Predicate> DatalogProgram::getQueries() {
+    return queries;
+}
