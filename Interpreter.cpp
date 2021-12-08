@@ -47,6 +47,15 @@ void Interpreter::run() {
 
 
     }
+    std::cout << "\n";
+    std::cout << database.getTables().find("snap")->second->cross(*database.getTables().find("csg")->second,*database.getTables().find("snap")->second).toString();
+    std::cout << "\n";
+    std::cout << "\n";
+    std::cout << "\n";
+    std::cout << "rrr";
+    std::cout << database.getTables().find("snap")->second->join(*database.getTables().find("csg")->second).toString();
+
+
 
 }
 

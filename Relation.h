@@ -21,6 +21,7 @@ public:
     Relation(std::string,Header);
     void addTuple(Tuple);
     void setHeader(Header);
+
     std::string getName();
     std::string toString();
     std::string toStringQ();
@@ -29,6 +30,10 @@ public:
     Relation select(int,int);
     Relation project(std::vector<int>);
     Relation rename(std::vector<std::string>);
+
+    Relation join(Relation);
+    Relation cross(Relation,Relation);
+
 
 
 };

@@ -130,3 +130,125 @@ Relation Relation::select(int index1, int index2) {
     }
     return select;
 }
+
+Relation Relation::cross(Relation A, Relation B) {
+
+
+
+
+    //bool Cross = true;
+    //cross product
+    /*
+
+    for (unsigned int i = 0; i < this->header.getHeaders().size() ; ++i) {
+        for (unsigned int j = 0; i < B.header.getHeaders().size() ; ++i) {
+            if (this->header.getHeaders()[i] == B.header.getHeaders()[j]) {
+                Cross = false;
+            }
+        }
+    }
+    if (
+    if (Cross) {
+        std::string newName = this->getName()+B.getName();
+        std::vector<std::string> headerString = this->header.getHeaders();
+        for (unsigned int i = 0; i < B.header.getHeaders().size(); ++i) {
+            headerString.push_back(B.header.getHeaders()[i]);
+        }
+        Header newHeader(headerString);
+
+        Relation X = Relation(newName,newHeader);
+        for (Tuple t :mySet) {
+            std::vector<std::string> tupleValues = t.getTuple();
+            for (Tuple v :B.mySet) {
+                for (unsigned int i = 0; i < v.getTuple().size(); ++i) {
+                    tupleValues.push_back(v.getTuple()[i]);
+                }
+
+            }
+            X.addTuple(tupleValues);
+        }
+    }
+*/
+    std::string newName = A.getName()+B.getName();
+    std::vector<std::string> headerString = A.header.getHeaders();
+    for (unsigned int i = 0; i < B.header.getHeaders().size(); ++i) {
+        headerString.push_back(B.header.getHeaders()[i]);
+    }
+    Header newHeader(headerString);
+
+    Relation X = Relation(newName,newHeader);
+    for (Tuple t :A.mySet) {
+
+        for (Tuple v :B.mySet) {
+            std::vector<std::string> tupleValues = t.getTuple();
+            for (unsigned int i = 0; i < v.getTuple().size(); ++i) {
+                tupleValues.push_back(v.getTuple()[i]);
+            }
+
+            X.addTuple(tupleValues);
+        }
+
+    }
+
+
+
+
+
+    return X;
+}
+
+Relation Relation::join(Relation B) {
+
+    std::vector<int> sameThisHeaders;
+    std::vector<int> sameBHeaders;
+    std::vector<std::string> newHeader = B.header.getHeaders();
+    std::vector<int> projectionIndex;
+
+    for (unsigned int i = 0; i < this->header.getHeaders().size() ; ++i) {
+        for (unsigned int j = 0; j < B.header.getHeaders().size() ; ++j) {
+            if (this->header.getHeaders()[i] == B.header.getHeaders()[j]) {
+                sameThisHeaders.push_back(i);
+                sameBHeaders.push_back(j);
+                newHeader[j] = B.header.getHeaders()[j] + "*";
+            }
+        }
+    }
+
+    std::string newName = this->getName()+B.getName();
+    std::vector<std::string> headerString = this->header.getHeaders();
+    for (unsigned int i = 0; i < B.header.getHeaders().size(); ++i) {
+        headerString.push_back(B.header.getHeaders()[i]);
+    }
+    Header addHeader(headerString);
+
+    Relation X = Relation(newName,addHeader);
+
+
+    B = B.rename(newHeader);
+    X = cross(*this,B);
+
+    for (unsigned int i = 0; i < sameThisHeaders.size(); ++i) {
+        X = X.select(sameThisHeaders[i],this->header.getHeaders().size() + sameBHeaders[i]);
+    }
+    int index = 0;
+    for (unsigned int i = 0; i < this->header.getHeaders().size() + B.header.getHeaders().size(); ++i) {
+
+        bool indexadd = true;
+        for (unsigned int j = 0; j < sameBHeaders.size(); ++j) {
+            if ((int)this->header.getHeaders().size() +sameBHeaders[j] == index) {
+                indexadd = false;
+            }
+        }
+        if (indexadd) {
+            projectionIndex.push_back(i);
+        }
+        index++;
+    }
+
+    X = X.project(projectionIndex);
+
+
+
+
+    return X;
+}
