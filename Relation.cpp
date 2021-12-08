@@ -197,16 +197,16 @@ Relation Relation::cross(Relation A, Relation B) {
     return X;
 }
 
-Relation Relation::join(Relation B) {
+Relation Relation::join(Relation A,Relation B) {
 
     std::vector<int> sameThisHeaders;
     std::vector<int> sameBHeaders;
     std::vector<std::string> newHeader = B.header.getHeaders();
     std::vector<int> projectionIndex;
 
-    for (unsigned int i = 0; i < this->header.getHeaders().size() ; ++i) {
+    for (unsigned int i = 0; i < A.header.getHeaders().size() ; ++i) {
         for (unsigned int j = 0; j < B.header.getHeaders().size() ; ++j) {
-            if (this->header.getHeaders()[i] == B.header.getHeaders()[j]) {
+            if (A.header.getHeaders()[i] == B.header.getHeaders()[j]) {
                 sameThisHeaders.push_back(i);
                 sameBHeaders.push_back(j);
                 newHeader[j] = B.header.getHeaders()[j] + "*";
@@ -214,8 +214,8 @@ Relation Relation::join(Relation B) {
         }
     }
 
-    std::string newName = this->getName()+B.getName();
-    std::vector<std::string> headerString = this->header.getHeaders();
+    std::string newName = A.getName()+B.getName();
+    std::vector<std::string> headerString = A.header.getHeaders();
     for (unsigned int i = 0; i < B.header.getHeaders().size(); ++i) {
         headerString.push_back(B.header.getHeaders()[i]);
     }
@@ -225,17 +225,17 @@ Relation Relation::join(Relation B) {
 
 
     B = B.rename(newHeader);
-    X = cross(*this,B);
+    X = cross(A,B);
 
     for (unsigned int i = 0; i < sameThisHeaders.size(); ++i) {
-        X = X.select(sameThisHeaders[i],this->header.getHeaders().size() + sameBHeaders[i]);
+        X = X.select(sameThisHeaders[i],A.header.getHeaders().size() + sameBHeaders[i]);
     }
     int index = 0;
-    for (unsigned int i = 0; i < this->header.getHeaders().size() + B.header.getHeaders().size(); ++i) {
+    for (unsigned int i = 0; i < A.header.getHeaders().size() + B.header.getHeaders().size(); ++i) {
 
         bool indexadd = true;
         for (unsigned int j = 0; j < sameBHeaders.size(); ++j) {
-            if ((int)this->header.getHeaders().size() +sameBHeaders[j] == index) {
+            if ((int)A.header.getHeaders().size() +sameBHeaders[j] == index) {
                 indexadd = false;
             }
         }
@@ -264,4 +264,8 @@ void Relation::unionize(Relation B) {
 
 Header Relation::getHeader() {
     return header;
+}
+
+std::set<Tuple> Relation::getTuple() {
+    return mySet;
 }

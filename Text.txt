@@ -19,5 +19,5 @@ Rules:
   ncg(n,c,g) :- snap(S,n,A,P),csg(c,S,g).
 
 Queries:
-
-  csg('Snoopy',Course,Grade)?
+  cn('CS101',Name)?
+  ncg('Snoopy',Course,Grade)?

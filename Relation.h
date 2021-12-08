@@ -26,13 +26,14 @@ public:
     std::string toString();
     std::string toStringQ();
     Header getHeader();
+    std::set<Tuple> getTuple();
 
     Relation select(int,std::string);
     Relation select(int,int);
     Relation project(std::vector<int>);
     Relation rename(std::vector<std::string>);
 
-    Relation join(Relation);
+    Relation join(Relation,Relation);
     Relation cross(Relation,Relation);
 
     void unionize(Relation);
