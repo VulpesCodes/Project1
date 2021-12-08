@@ -22,6 +22,7 @@ public:
     Relation evaluatePredicate(Predicate);
     void evaluateScheme(Predicate);
     void evaluateFact(Predicate);
+    void evaluateRules();
     Relation evaluateQueries(Predicate);
     void run();
 };

@@ -36,8 +36,12 @@ void Interpreter::run() {
         evaluateFact(datalogProgram.getFacts()[i]);
 
     }
-    //std::cout << database.printString();
 
+    evaluateRules();
+
+    std::cout << database.printString();
+
+    /*
     for (unsigned int i = 0; i < datalogProgram.getQueries().size(); ++i) {
         Relation query = evaluatePredicate(datalogProgram.getQueries()[i]);
         std::cout <<  datalogProgram.getQueries()[i].toString() + "? " + query.toStringQ();
@@ -53,7 +57,7 @@ void Interpreter::run() {
     std::cout << "\n";
     std::cout << "\n";
     std::cout << "rrr";
-    std::cout << database.getTables().find("snap")->second->join(*database.getTables().find("csg")->second).toString();
+    std::cout << database.getTables().find("snap")->second->join(*database.getTables().find("csg")->second).toString();*/
 
 
 
@@ -111,6 +115,52 @@ Relation Interpreter::evaluatePredicate(Predicate p) {    //TEMP
 
 Relation Interpreter::evaluateQueries(Predicate p) {
     return evaluatePredicate(p);
+}
+
+void Interpreter::evaluateRules() {
+
+    bool addedTuples = true;
+
+    while (addedTuples) {
+        for (unsigned int i = 0; i < datalogProgram.getRules().size(); ++i) {
+            Rule currRule = datalogProgram.getRules()[i];
+            std::vector<Relation> evaledPred;
+
+            for (unsigned int j = 0; j < currRule.getBodyPred().size(); ++j) {
+                evaledPred.push_back(evaluatePredicate(currRule.getBodyPred()[j]));
+            }
+            for (unsigned int j = 1; j < evaledPred.size(); ++j) {
+                evaledPred[0].join(evaledPred[j]);
+            }
+            std::vector<int> projectindex;
+            for (unsigned int j = 0; j < currRule.getHeadPred().getID().size(); ++j) {
+                for (unsigned int k = 0; k < evaledPred[0].getHeader().getHeaders().size(); ++k) {
+                    std::string evalHeader = evaledPred[0].getHeader().getHeaders()[k];
+                    std::string ruleHeader;
+                    ruleHeader.push_back(currRule.getHeadPred().getID()[j]);
+                    if (evalHeader == ruleHeader) {
+                        projectindex.push_back((int) j);
+                    }
+                }
+            }
+            evaledPred[0].project(projectindex);
+
+            std::vector<std::string> renameHeader;
+            for (unsigned int j = 0; j < currRule.getHeadPred().getID().size(); ++j) {
+                std::string temp;
+                temp.push_back(currRule.getHeadPred().getID()[j]);
+                renameHeader.push_back(temp);
+            }
+            evaledPred[0].setHeader(Header(renameHeader));
+            int numOfRelations = database.getTables().size();
+            database.getTables().find(currRule.getHeadPred().getID())->second->unionize(evaledPred[0]);
+            if (database.getTables().size() != numOfRelations) {
+                addedTuples = false;
+            }
+        }
+    }
+
+
 }
 
 /*void Interpreter::addPredicate(Predicate p) {

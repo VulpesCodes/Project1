@@ -25,6 +25,7 @@ public:
     std::string getName();
     std::string toString();
     std::string toStringQ();
+    Header getHeader();
 
     Relation select(int,std::string);
     Relation select(int,int);
@@ -33,6 +34,8 @@ public:
 
     Relation join(Relation);
     Relation cross(Relation,Relation);
+
+    void unionize(Relation);
 
 
 

@@ -252,3 +252,16 @@ Relation Relation::join(Relation B) {
 
     return X;
 }
+
+void Relation::unionize(Relation B) {
+    for (Tuple t :B.mySet) {
+        if (this->mySet.insert(t.getTuple()).second)
+        {
+
+        }
+    }
+}
+
+Header Relation::getHeader() {
+    return header;
+}

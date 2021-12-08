@@ -34,3 +34,11 @@ std::string Rule::toString() {
     return output;
 }
 
+Predicate Rule::getHeadPred() {
+    return headPredicate;
+}
+
+std::vector<Predicate> Rule::getBodyPred() {
+    return bodyPredicates;
+}
+

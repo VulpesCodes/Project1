@@ -23,6 +23,8 @@ public:
     void setHeadPredicate(Predicate);
     void addPredicates(Predicate);
     std::string toString();
+    Predicate getHeadPred();
+    std::vector<Predicate> getBodyPred();
 };
 
 #endif //PROJECT1_STARTER_CODE_RULE_H
