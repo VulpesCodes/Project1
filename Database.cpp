@@ -27,3 +27,16 @@ std::string Database::printString() {
     }
     return output;
 }
+
+std::string Database::printString4() {
+    std::string output="";
+    std::map<std::string,Relation*>::iterator it;
+    for (it = tables.begin(); it != tables.end(); it++)
+    {
+        if (it->second->getPass() > 0) {
+            output += it->second->toString() + "\n";
+        }
+    }
+    return output;
+}
+

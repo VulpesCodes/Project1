@@ -15,6 +15,7 @@ class Interpreter
 private:
     Database database;
     DatalogProgram datalogProgram;
+    int pass = 0;
 
 public:
     Interpreter(DatalogProgram);

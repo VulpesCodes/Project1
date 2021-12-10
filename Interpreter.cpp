@@ -39,9 +39,42 @@ void Interpreter::run() {
 
     evaluateRules();
 
-    std::cout << database.printString();
+    std::map<std::string,Relation*> tables = database.getTables();
+
+    std::cout << "Rule Evaluation\n";
+
+    std::string output="";
+    std::map<std::string,Relation*>::iterator it;
+
+    for ( int k = 0; k <= pass; ++k) {
+        for (unsigned int i = 0; i < datalogProgram.getRules().size(); ++i) {
 
 
+
+
+            for (it = tables.begin(); it != tables.end(); it++) {
+                if (it->second->getName() == datalogProgram.getRules()[i].getHeadPred().getID()) {
+                    output += datalogProgram.getRules()[i].toString() + "\n";
+                    if (it->second->getPass() > k) {
+                        output += it->second->toString();
+
+                    }
+                }
+            }
+
+
+        }
+    }
+
+
+    std::cout << output;
+
+    //std::cout << database.printString4();
+
+    std::cout << "\nSchemes populated after " + std::to_string(pass+1) + " passes through the Rules\n\n";
+
+
+    std::cout << "Query Evaluation\n";
     for (unsigned int i = 0; i < datalogProgram.getQueries().size(); ++i) {
         Relation query = evaluatePredicate(datalogProgram.getQueries()[i]);
         std::cout <<  datalogProgram.getQueries()[i].toString() + "? " + query.toStringQ();
@@ -123,9 +156,12 @@ void Interpreter::evaluateRules() {
 
     bool addedTuples = true;
 
+
     while (addedTuples) {
         std::vector<int> numOfRelationsPost;
         std::vector<int> numOfRelationsPre;
+        pass++;
+
         for (unsigned int i = 0; i < datalogProgram.getRules().size(); ++i) {
             Rule currRule = datalogProgram.getRules()[i];
             std::vector<Relation> evaledPred;
@@ -170,6 +206,8 @@ void Interpreter::evaluateRules() {
 
 
 
+
+
             for (auto const& x : database.getTables())
             {
                 numOfRelationsPre.push_back((int)x.second->getTuple().size());
@@ -179,6 +217,7 @@ void Interpreter::evaluateRules() {
 
 
             database.getTables().find(currRule.getHeadPred().getID())->second->unionize(evaledPred[0]);
+            database.getTables().find(currRule.getHeadPred().getID())->second->setPass(pass);
 
 
 

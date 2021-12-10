@@ -269,3 +269,11 @@ Header Relation::getHeader() {
 std::set<Tuple> Relation::getTuple() {
     return mySet;
 }
+
+void Relation::setPass(int in ) {
+    newRelation = in ;
+}
+
+int Relation::getPass() {
+    return newRelation;
+}

@@ -20,6 +20,7 @@ public:
     std::string printRelation(std::string);
     std::map<std::string,Relation*> getTables();
     std::string printString();
+    std::string printString4();
 
 };
 

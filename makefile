@@ -1,7 +1,8 @@
-#makefile for lab 2 pass off cases
-NUM:=3
-buckets:=80
-numbers_80:=30 33 35 36 37 41 42 43 44 61 62
+#makefile for lab 4 pass off cases
+NUM:=4
+buckets:=80 100
+numbers_80:=0 1 2 3 4 5 6 7
+numbers_100:=1 2 3 5 6 7 8
 tests:=Lab$(NUM)PassOffCases
 
 .SILENT: all $(buckets)
@@ -14,8 +15,8 @@ $(buckets):
 	for number in ${numbers_$@} ; \
 	do \
 		echo "Running input $$number" ; \
-		./lab$(NUM) $(tests)/$(NUM)-$@/in$$number.txt > $(tests)/out.txt ; \
-		diff -w $(tests)/$(NUM)-$@/out$$number.txt $(tests)/out.txt || (echo "diff failed on test $$number \n") ; \
+		./lab$(NUM) $(tests)/$(NUM)-$@/input$$number.txt > $(tests)/out.txt ; \
+		diff -w $(tests)/$(NUM)-$@/answer$$number.txt $(tests)/out.txt || (echo "diff failed on test $$number \n") ; \
 	done \
 
 compile:

@@ -16,11 +16,14 @@ private:
     std::string name;
     Header header;
     std::set<Tuple> mySet;
+    int newRelation = 0;
 
 public:
     Relation(std::string,Header);
     void addTuple(Tuple);
     void setHeader(Header);
+    void setPass(int);
+    int getPass();
 
     std::string getName();
     std::string toString();
